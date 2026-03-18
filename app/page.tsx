@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useMemo, useEffect, useRef } from 'react'
+import Link from 'next/link'
 import data from '../public/data.json'
 
 type Item = {
@@ -208,9 +209,17 @@ export default function Home() {
 
       {/* Header */}
       <div style={{ position: 'sticky', top: 0, zIndex: 10, background: '#1a1a2e', color: '#fff', padding: '12px 16px', boxShadow: '0 2px 8px rgba(0,0,0,0.3)' }}>
-        <div style={{ fontSize: 18, fontWeight: 700, marginBottom: 10 }}>
-          ინვენტარი
-          <span style={{ fontSize: 12, fontWeight: 400, marginLeft: 8, opacity: 0.7 }}>{items.length} პოზიცია</span>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 }}>
+          <div style={{ fontSize: 18, fontWeight: 700 }}>
+            ინვენტარი
+            <span style={{ fontSize: 12, fontWeight: 400, marginLeft: 8, opacity: 0.7 }}>{items.length} პოზიცია</span>
+          </div>
+          <Link href="/calculator" style={{
+            textDecoration: 'none', background: '#e94560', color: '#fff',
+            padding: '6px 14px', borderRadius: 10, fontSize: 13, fontWeight: 600,
+          }}>
+            🧮 კალკ.
+          </Link>
         </div>
         <input type="search" value={query} onChange={e => setQuery(e.target.value)}
           placeholder="მოძებნე კოდით ან დასახელებით..."
