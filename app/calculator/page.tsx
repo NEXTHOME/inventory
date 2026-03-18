@@ -249,10 +249,132 @@ function SheetCalc() {
   )
 }
 
+// ─── Tile / Stone Calculator ──────────────────────────────────────────────────
+
+function TileStoneCalc({ type }: { type: 'tile' | 'stone' }) {
+  const defaultRatio = type === 'tile' ? 3.19 : 1.2
+  const [ratio, setRatio] = useState(String(defaultRatio))
+  const [mode, setMode] = useState<'m2' | 'm3'>('m2')
+  const [val, setVal] = useState('')
+  const [qty, setQty] = useState('')
+
+  const r = parseFloat(ratio) || defaultRatio
+  const v = parseFloat(val) || 0
+  const count = parseFloat(qty) || 1
+
+  const m2 = mode === 'm2' ? v * count : v * r * count
+  const m3 = mode === 'm3' ? v * count : (v / r) * count
+  const m3one = mode === 'm3' ? v : v / r
+  const m2one = mode === 'm2' ? v : v * r
+
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+
+      {/* Ratio */}
+      <div style={{ background: '#fff', borderRadius: 12, padding: '12px 14px' }}>
+        <label style={{ fontSize: 12, color: '#888', display: 'block', marginBottom: 6 }}>
+          კონვერტაციის კოეფიციენტი (1 კუბი = ? მ²)
+        </label>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <input
+            type="number"
+            inputMode="decimal"
+            value={ratio}
+            onChange={e => setRatio(e.target.value)}
+            style={{ width: 80, padding: '8px 10px', fontSize: 16, borderRadius: 8, border: '1.5px solid #e0e0e0', outline: 'none' }}
+          />
+          <span style={{ fontSize: 13, color: '#666' }}>მ² / 1 მ³</span>
+          <button
+            onClick={() => setRatio(String(defaultRatio))}
+            style={{ marginLeft: 'auto', padding: '6px 12px', borderRadius: 8, border: 'none', background: '#f0f0f0', fontSize: 12, cursor: 'pointer', color: '#555' }}
+          >
+            ნაგულისხმევი ({defaultRatio})
+          </button>
+        </div>
+      </div>
+
+      {/* Mode */}
+      <div>
+        <label style={{ fontSize: 12, color: '#888', display: 'block', marginBottom: 6 }}>რა მაქვს?</label>
+        <div style={{ display: 'flex', gap: 8 }}>
+          {[
+            { v: 'm2', label: 'კვ.მ → კუბი' },
+            { v: 'm3', label: 'კუბი → კვ.მ' },
+          ].map(opt => (
+            <button key={opt.v} onClick={() => { setMode(opt.v as 'm2' | 'm3'); setVal('') }} style={{
+              flex: 1, padding: '8px 0', borderRadius: 10, border: 'none', cursor: 'pointer',
+              fontSize: 13, fontWeight: mode === opt.v ? 700 : 400,
+              background: mode === opt.v ? '#1a1a2e' : '#f0f0f0',
+              color: mode === opt.v ? '#fff' : '#333',
+            }}>
+              {opt.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+        <NumInput
+          label={mode === 'm2' ? 'ფართობი' : 'კუბი'}
+          value={val} onChange={setVal}
+          placeholder="0.00"
+          unit={mode === 'm2' ? 'მ²' : 'მ³'}
+        />
+        <NumInput label="რაოდენობა" value={qty} onChange={setQty} placeholder="1" unit="ც" />
+      </div>
+
+      {v > 0 && (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+          {count > 1 && (
+            <div style={{ background: '#f8f8f8', borderRadius: 10, padding: '8px 14px', fontSize: 13, color: '#555', display: 'flex', justifyContent: 'space-between' }}>
+              <span>1 ერთეული:</span>
+              <span style={{ fontWeight: 600 }}>
+                {mode === 'm2'
+                  ? `${(m3one).toFixed(3)} მ³`
+                  : `${(m2one).toFixed(2)} მ²`}
+              </span>
+            </div>
+          )}
+          <div style={{ background: '#1a1a2e', borderRadius: 12, padding: '14px 18px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span style={{ color: 'rgba(255,255,255,0.7)', fontSize: 13 }}>
+              {mode === 'm2' ? `${m2.toFixed(2)} მ² →` : `${m3.toFixed(3)} მ³ →`}
+            </span>
+            <span style={{ color: '#fff', fontSize: 20, fontWeight: 700 }}>
+              {mode === 'm2'
+                ? `${m3.toFixed(3)} მ³`
+                : `${m2.toFixed(2)} მ²`}
+            </span>
+          </div>
+          {/* Both values */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
+            <div style={{ background: '#fff', borderRadius: 10, padding: '10px 12px', textAlign: 'center' }}>
+              <div style={{ fontSize: 11, color: '#999', marginBottom: 2 }}>კვ.მეტრი</div>
+              <div style={{ fontSize: 16, fontWeight: 700, color: '#1a1a2e' }}>{m2.toFixed(2)} მ²</div>
+            </div>
+            <div style={{ background: '#fff', borderRadius: 10, padding: '10px 12px', textAlign: 'center' }}>
+              <div style={{ fontSize: 11, color: '#999', marginBottom: 2 }}>კუბ.მეტრი</div>
+              <div style={{ fontSize: 16, fontWeight: 700, color: '#e94560' }}>{m3.toFixed(3)} მ³</div>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
+type Tab = 'rebar' | 'sheet' | 'tile' | 'stone'
+
 export default function Calculator() {
-  const [tab, setTab] = useState<'rebar' | 'sheet'>('rebar')
+  const [tab, setTab] = useState<Tab>('rebar')
+
+  const tabs: { v: Tab; label: string }[] = [
+    { v: 'rebar', label: '🔩 არმატურა' },
+    { v: 'sheet', label: '🪨 ლითონი' },
+    { v: 'tile', label: '🟫 ფილა' },
+    { v: 'stone', label: '⬛ ქვა' },
+  ]
 
   return (
     <div style={{ maxWidth: 600, margin: '0 auto', minHeight: '100vh', background: '#f5f5f5' }}>
@@ -266,29 +388,20 @@ export default function Calculator() {
         boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
-          <Link href="/" style={{
-            color: '#fff', textDecoration: 'none', fontSize: 22, lineHeight: 1,
-            opacity: 0.8,
-          }}>←</Link>
+          <Link href="/" style={{ color: '#fff', textDecoration: 'none', fontSize: 22, lineHeight: 1, opacity: 0.8 }}>←</Link>
           <span style={{ fontSize: 18, fontWeight: 700 }}>კალკულატორი</span>
         </div>
 
-        {/* Tab switch */}
-        <div style={{ display: 'flex', gap: 8 }}>
-          {([
-            { v: 'rebar', label: '🔩 არმატურა' },
-            { v: 'sheet', label: '📦 ლითონის ლისტი' },
-          ] as const).map(t => (
-            <button
-              key={t.v}
-              onClick={() => setTab(t.v)}
-              style={{
-                flex: 1, padding: '8px 0', borderRadius: 10, border: 'none',
-                cursor: 'pointer', fontSize: 13, fontWeight: tab === t.v ? 700 : 400,
-                background: tab === t.v ? '#e94560' : 'rgba(255,255,255,0.15)',
-                color: '#fff',
-              }}
-            >
+        {/* Tab switch — 2 rows */}
+        <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+          {tabs.map(t => (
+            <button key={t.v} onClick={() => setTab(t.v)} style={{
+              flex: '1 1 calc(50% - 4px)', padding: '8px 0', borderRadius: 10,
+              border: 'none', cursor: 'pointer', fontSize: 13,
+              fontWeight: tab === t.v ? 700 : 400,
+              background: tab === t.v ? '#e94560' : 'rgba(255,255,255,0.15)',
+              color: '#fff',
+            }}>
               {t.label}
             </button>
           ))}
@@ -297,7 +410,10 @@ export default function Calculator() {
 
       {/* Content */}
       <div style={{ padding: 16 }}>
-        {tab === 'rebar' ? <RebarCalc /> : <SheetCalc />}
+        {tab === 'rebar' && <RebarCalc />}
+        {tab === 'sheet' && <SheetCalc />}
+        {tab === 'tile' && <TileStoneCalc type="tile" />}
+        {tab === 'stone' && <TileStoneCalc type="stone" />}
       </div>
     </div>
   )
