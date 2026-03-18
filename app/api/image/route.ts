@@ -4,40 +4,23 @@ export async function GET(req: NextRequest) {
   const q = req.nextUrl.searchParams.get('q')
   if (!q) return NextResponse.json({ imageUrl: null })
 
-  const apiKey = process.env.GOOGLE_API_KEY
-  const cx = process.env.GOOGLE_CSE_ID
+  const apiKey = process.env.PIXABAY_API_KEY
+  if (!apiKey) return NextResponse.json({ imageUrl: null, error: 'missing_key' })
 
-  if (!apiKey || !cx) {
-    return NextResponse.json({ imageUrl: null, error: 'missing_env' })
-  }
-
-  // Try with Georgian query first, then English fallback
-  const queries = [q, `${q} building material`]
+  // Try Georgian query, then English translation hint
+  const queries = [q, `${q} construction material tool`]
 
   for (const query of queries) {
     try {
-      const url = `https://www.googleapis.com/customsearch/v1?key=${apiKey}&cx=${cx}&q=${encodeURIComponent(query)}&searchType=image&num=5&imgSize=medium&safe=active`
+      const url = `https://pixabay.com/api/?key=${apiKey}&q=${encodeURIComponent(query)}&image_type=photo&per_page=5&safesearch=true`
       const res = await fetch(url)
       const data = await res.json()
 
-      if (data.error) {
-        return NextResponse.json({ imageUrl: null, error: data.error.message })
-      }
-
-      // Pick first image that's not a tiny icon
-      const items = data.items || []
-      for (const item of items) {
-        const w = item.image?.width ?? 0
-        const h = item.image?.height ?? 0
-        if (w >= 100 && h >= 100) {
-          return NextResponse.json({ imageUrl: item.link })
-        }
-      }
-      if (items[0]?.link) {
-        return NextResponse.json({ imageUrl: items[0].link })
+      if (data.hits && data.hits.length > 0) {
+        return NextResponse.json({ imageUrl: data.hits[0].webformatURL })
       }
     } catch {
-      // continue to next query
+      // try next query
     }
   }
 
