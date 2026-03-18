@@ -252,7 +252,7 @@ function SheetCalc() {
 // ─── Tile / Stone Calculator ──────────────────────────────────────────────────
 
 function TileStoneCalc({ type }: { type: 'tile' | 'stone' }) {
-  const ratio = type === 'tile' ? 3.19 : 1.2
+  const ratio = type === 'tile' ? 3.19 : 3.0
   const [cubIn, setCubIn] = useState('')
 
   const cub = parseFloat(cubIn) || 0
