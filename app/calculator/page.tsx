@@ -252,65 +252,34 @@ function SheetCalc() {
 // ─── Tile / Stone Calculator ──────────────────────────────────────────────────
 
 function TileStoneCalc({ type }: { type: 'tile' | 'stone' }) {
-  const defaultRatio = type === 'tile' ? 3.19 : 1.2
+  const ratio = type === 'tile' ? 3.19 : 1.2
   const [cubIn, setCubIn] = useState('')
-  const [m2In, setM2In] = useState('')
 
-  const r = defaultRatio
-
-  // if user types in cubes → calc m2; if types m2 → calc cubes
-  const cubVal = parseFloat(cubIn) || 0
-  const m2Val = parseFloat(m2In) || 0
-
-  const resultM2 = cubVal > 0 ? cubVal * r : 0
-  const resultCub = m2Val > 0 ? m2Val / r : 0
+  const cub = parseFloat(cubIn) || 0
+  const m2 = cub * ratio
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
 
-      {/* Info badge */}
       <div style={{
         background: '#fff', borderRadius: 12, padding: '12px 16px',
         display: 'flex', justifyContent: 'space-between', alignItems: 'center',
       }}>
         <span style={{ fontSize: 13, color: '#666' }}>1 კუბი =</span>
-        <span style={{ fontSize: 20, fontWeight: 700, color: '#e94560' }}>{r} მ²</span>
+        <span style={{ fontSize: 20, fontWeight: 700, color: '#e94560' }}>{ratio} მ²</span>
       </div>
 
-      {/* კუბი → კვ.მ */}
-      <div style={{ background: '#fff', borderRadius: 14, padding: '16px' }}>
-        <div style={{ fontSize: 13, fontWeight: 600, color: '#333', marginBottom: 12 }}>
-          კუბი → კვ.მეტრი
+      <NumInput label="კუბ.მეტრი" value={cubIn} onChange={setCubIn} placeholder="მაგ. 100" unit="მ³" />
+
+      {cub > 0 && (
+        <div style={{
+          background: '#1a1a2e', borderRadius: 14,
+          padding: '20px 18px', display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+        }}>
+          <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: 14 }}>{cub} მ³ ×  {ratio} =</span>
+          <span style={{ color: '#fff', fontSize: 28, fontWeight: 700 }}>{m2.toFixed(2)} მ²</span>
         </div>
-        <NumInput label="კუბ.მეტრი" value={cubIn} onChange={v => { setCubIn(v); setM2In('') }} placeholder="მაგ. 100" unit="მ³" />
-        {cubVal > 0 && (
-          <div style={{
-            marginTop: 12, background: '#1a1a2e', borderRadius: 12,
-            padding: '16px 18px', display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-          }}>
-            <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: 13 }}>{cubVal} მ³ →</span>
-            <span style={{ color: '#fff', fontSize: 24, fontWeight: 700 }}>{resultM2.toFixed(2)} მ²</span>
-          </div>
-        )}
-      </div>
-
-      {/* კვ.მ → კუბი */}
-      <div style={{ background: '#fff', borderRadius: 14, padding: '16px' }}>
-        <div style={{ fontSize: 13, fontWeight: 600, color: '#333', marginBottom: 12 }}>
-          კვ.მეტრი → კუბი
-        </div>
-        <NumInput label="კვ.მეტრი" value={m2In} onChange={v => { setM2In(v); setCubIn('') }} placeholder="მაგ. 319" unit="მ²" />
-        {m2Val > 0 && (
-          <div style={{
-            marginTop: 12, background: '#1a1a2e', borderRadius: 12,
-            padding: '16px 18px', display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-          }}>
-            <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: 13 }}>{m2Val} მ² →</span>
-            <span style={{ color: '#fff', fontSize: 24, fontWeight: 700 }}>{resultCub.toFixed(3)} მ³</span>
-          </div>
-        )}
-      </div>
-
+      )}
     </div>
   )
 }
