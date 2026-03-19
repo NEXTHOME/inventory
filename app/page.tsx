@@ -2,7 +2,8 @@
 
 import { useState, useMemo, useEffect, useRef } from 'react'
 import Link from 'next/link'
-import data from '../public/data.json'
+import warehouseData from '../public/data.json'
+import meoradiData from '../public/meoradi.json'
 
 type Item = {
   code: string
@@ -13,7 +14,10 @@ type Item = {
   unit: string
 }
 
-const items = data as Item[]
+const allData: Record<string, Item[]> = {
+  warehouse: warehouseData as Item[],
+  meoradi: meoradiData as Item[],
+}
 
 function fmt(n: number) {
   if (!n) return '—'
@@ -177,18 +181,21 @@ function Stat({ label, value, accent }: { label: string; value: string; accent?:
 const PAGE_SIZES = [10, 20, 100, 300]
 
 export default function Home() {
+  const [category, setCategory] = useState<'warehouse' | 'meoradi'>('warehouse')
   const [query, setQuery] = useState('')
   const [filter, setFilter] = useState<'all' | 'code' | 'name'>('all')
   const [imageMap, setImageMap] = useState<Record<string, string>>({})
   const [pageSize, setPageSize] = useState(20)
   const [page, setPage] = useState(1)
 
+  const items = allData[category]
+
   useEffect(() => {
     fetch('/imageMap.json').then(r => r.json()).then(setImageMap).catch(() => {})
   }, [])
 
-  // reset page when query changes
-  useEffect(() => { setPage(1) }, [query, filter, pageSize])
+  // reset page when category/query changes
+  useEffect(() => { setPage(1) }, [category, query, filter, pageSize])
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
@@ -198,7 +205,7 @@ export default function Home() {
       if (filter === 'name') return item.name.toLowerCase().includes(q)
       return item.code.toLowerCase().includes(q) || item.name.toLowerCase().includes(q)
     })
-  }, [query, filter])
+  }, [category, query, filter, items])
 
   const totalPages = Math.ceil(filtered.length / pageSize)
   const visible = filtered.slice((page - 1) * pageSize, page * pageSize)
@@ -212,7 +219,7 @@ export default function Home() {
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 }}>
           <div style={{ fontSize: 18, fontWeight: 700 }}>
             ინვენტარი
-            <span style={{ fontSize: 12, fontWeight: 400, marginLeft: 8, opacity: 0.7 }}>{items.length} პოზიცია</span>
+            <span style={{ fontSize: 12, fontWeight: 400, marginLeft: 8, opacity: 0.7 }}>{items.length} პოზ.</span>
           </div>
           <Link href="/calculator" style={{
             textDecoration: 'none', background: '#e94560', color: '#fff',
@@ -221,6 +228,24 @@ export default function Home() {
             🧮 კალკ.
           </Link>
         </div>
+
+        {/* Category switcher */}
+        <div style={{ display: 'flex', gap: 8, marginBottom: 10 }}>
+          {([
+            { v: 'warehouse', label: '🏭 საწყობის მასალა' },
+            { v: 'meoradi', label: '♻️ მეორადი საქონელი' },
+          ] as const).map(c => (
+            <button key={c.v} onClick={() => { setCategory(c.v); setQuery('') }} style={{
+              flex: 1, padding: '8px 0', fontSize: 12, borderRadius: 10, border: 'none',
+              cursor: 'pointer', fontWeight: category === c.v ? 700 : 400,
+              background: category === c.v ? '#fff' : 'rgba(255,255,255,0.15)',
+              color: category === c.v ? '#1a1a2e' : '#fff',
+            }}>
+              {c.label}
+            </button>
+          ))}
+        </div>
+
         <input type="search" value={query} onChange={e => setQuery(e.target.value)}
           placeholder="მოძებნე კოდით ან დასახელებით..."
           autoComplete="off"
