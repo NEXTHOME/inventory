@@ -1,0 +1,794 @@
+[
+  {
+    "code": "2150 1 1 02348",
+    "name": "ამწე",
+    "totalPrice": 16.67,
+    "unitPrice": 16.67,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 1 1 02349",
+    "name": "ბეტონისყალიბი მყარი და დრეკადი 19.5*182",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 50,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 1 1 02350",
+    "name": "კარ-ფანჯრის დასამზადებელი დანადგარი",
+    "totalPrice": 304.64,
+    "unitPrice": 50.77,
+    "quantity": 6,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 1 1 00503",
+    "name": "ლითონკონსტრუქციები შავი ლითონისგან",
+    "totalPrice": 245.95,
+    "unitPrice": 0.02,
+    "quantity": 10101.2,
+    "unit": "კგ"
+  },
+  {
+    "code": "2150 1 1 02351",
+    "name": "მოსაპირკეთებელი ფილების ყალიბები",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 8,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 1 1 00314",
+    "name": "პლასმასის ოთახი კომპლექტში 125*125*240",
+    "totalPrice": 269.8,
+    "unitPrice": 89.93,
+    "quantity": 3,
+    "unit": "კომპლექტი"
+  },
+  {
+    "code": "2150 1 1 00547",
+    "name": "სექციური ვიბროლარტყა თავისი ნაწილებით",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 3,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 1 1 00550",
+    "name": "ტუმბო (ბათქაშის შემფრქვევი ხელსაწყო)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "კომპლექტი"
+  },
+  {
+    "code": "2150 1 2 02352",
+    "name": "ასფალტის საჭრელი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 1 2 00586",
+    "name": "დრელი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 1 2 02353",
+    "name": "ელ.ჩაქუჩი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 1 2 02354",
+    "name": "კომპრესორი  500",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 1 2 02355",
+    "name": "მ/წ რეცხვის დანადგარი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 1 2 00537",
+    "name": "პულივიზატორი პს-24 ვაგნერი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 1 2 00543",
+    "name": "სარეცხი აპარატი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 1 2 02356",
+    "name": "საღებავი აპარატი CRACO",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 1 2 02357",
+    "name": "ქვიშჭავლური აპარატი თავისი ნაწილებით",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 1 2 02358",
+    "name": "ჰიდრავლიკური სარეცხი აგრეგატი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 1 3 02359",
+    "name": "ნიველირი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 1 3 00940",
+    "name": "ტენტი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "კვ.მ"
+  },
+  {
+    "code": "2150 1 3 00556",
+    "name": "ქვის ბლოკი ღობის დასამაგრებლად",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 66,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 1 3 00577",
+    "name": "ხელის ინსტრუმენტის ნაკრები",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "კომპლექტი"
+  },
+  {
+    "code": "2150 2 1 00972",
+    "name": "BGF 24 გარდამქმნელი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 1 00306",
+    "name": "PK 1600 D სანათი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 1 39065",
+    "name": "ბეტონის გამტარი შლანგი 125*6000*1 თავისი მუხლებით",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 1 00426",
+    "name": "ბეტონის ყალიბების აბაზანა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 1 39748",
+    "name": "ბეტონის ჩასასხმელი ბადია",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ც"
+  },
+  {
+    "code": "2150 2 1 00429",
+    "name": "ბიო ტუალეტი (WC)სატუალეტე კაბინა",
+    "totalPrice": 274.09,
+    "unitPrice": 137.05,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 1 00499",
+    "name": "ლაზერული თარაზო",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 1 00975",
+    "name": "ლაზერული მანძილმზომი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 1 00977",
+    "name": "ლითონის ფიტინგი კომპლექტში",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 1 00509",
+    "name": "მილი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "მეტრი"
+  },
+  {
+    "code": "2150 2 1 00513",
+    "name": "მობილური სახლი (კონტეინერი 2.4*6.0)",
+    "totalPrice": 173.98,
+    "unitPrice": 173.98,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 1 00542",
+    "name": "საპირფარეშო კაბინა 2.60*2.60",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 1 35635",
+    "name": "სტაციონალური ხერხი GTS 10 XC",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 1 00551",
+    "name": "ტურნიკეტი  500 ე",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 1 00985",
+    "name": "შოვების ამოსავსები ხელსაწყო",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 1 00563",
+    "name": "წყლის ავზი 3000 ლიტ თეთრი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 1 00567",
+    "name": "წყლის ტუმბო ყDX 1.5-25-2.55 F",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 1 00574",
+    "name": "ხელის ინსტრუმენტი ბეტონზე სამუშად განკუთვნილი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 1 00575",
+    "name": "ხელის ინსტრუმენტი ნაწილები",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 1 00577",
+    "name": "ხელის ინსტრუმენტის ნაკრები",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "კომპლექტი"
+  },
+  {
+    "code": "2150 2 1 00578",
+    "name": "ხელის სამუშაო ინსტრუმენტის ნაკრების ნაკრები",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "კომპლექტი"
+  },
+  {
+    "code": "2150 2 1 00579",
+    "name": "ხელსაწყოები  ნაკრებში",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 00397",
+    "name": "არმატურის საღუნი დაზგა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 00401",
+    "name": "არმატურის ჰიდრავლიკური საჭრელი დაზგა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 00993",
+    "name": "ბეტონის და ასფალტის საჭრელი მანქანა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 00423",
+    "name": "ბეტონის საჭრელი დანადგარი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 00424",
+    "name": "ბეტონის საჭრელი ჩარხი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 00428",
+    "name": "ბეტონის შემრევი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 00994",
+    "name": "გასაშხეფი მოწყობილობების ნაწილები",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 12,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 00431",
+    "name": "გრუნტის მოსაპირკეთებელი მანქანა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 00432",
+    "name": "გრუნტის მოსაპირკეთებელი მანქანა პატარა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 36523",
+    "name": "ვაკუუმური ხელსაწყო - ფილების ასაწევი დანადგარი",
+    "totalPrice": 952.53,
+    "unitPrice": 952.53,
+    "quantity": 1,
+    "unit": "ც"
+  },
+  {
+    "code": "2150 2 2 00495",
+    "name": "კუთხის საჭრელი  MAKITA 2712",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 00311",
+    "name": "ლითონის სამშენებლო დგარები",
+    "totalPrice": 2768.01,
+    "unitPrice": 0.88,
+    "quantity": 3134,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 00502",
+    "name": "ლითონის საღუნი ჩარხი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 00312",
+    "name": "ლითონის ღობე",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 334,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 00504",
+    "name": "მ/წ დანადგარი თავისი ნაწილებით",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 00510",
+    "name": "მიწის სატკეპნი აპარატი WACKER",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 00512",
+    "name": "მობილური სახლი",
+    "totalPrice": 4935.31,
+    "unitPrice": 2467.66,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 00998",
+    "name": "მყარი რეზინის ნაწარმი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 5,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 01003",
+    "name": "მყარი რეზინის ნაწარმი ქვის ტექსტილური ფორმა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 21,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 01007",
+    "name": "მყარი რეზინის ნაწარმი ხის ტექსტილური ფორმა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 52,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 00527",
+    "name": "მშენებლობაში გამოსაყენებელი ლითონის ბჯინები",
+    "totalPrice": 2313.24,
+    "unitPrice": 1.65,
+    "quantity": 1400,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 36692",
+    "name": "პლასმასის ყალიბი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 01008",
+    "name": "რეზინის მილი 25 მმ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 01011",
+    "name": "რეზინის ნაწარმი ყალიბებისათვის",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 10,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 00315",
+    "name": "სამშენებლო ხარაჩო თავისი აქსესუარებით",
+    "totalPrice": 1987.91,
+    "unitPrice": 0.67,
+    "quantity": 2955,
+    "unit": "მეტრი"
+  },
+  {
+    "code": "2150 2 2 00547",
+    "name": "სექციური ვიბროლარტყა თავისი ნაწილებით",
+    "totalPrice": 215.43,
+    "unitPrice": 215.43,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 00554",
+    "name": "ქათენბრეიქი",
+    "totalPrice": 300.14,
+    "unitPrice": 300.14,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 00318",
+    "name": "ქვის ბლოკები",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 47,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 01013",
+    "name": "შემოსაღობები",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 103,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 00570",
+    "name": "ხარაჩო ATALANT 1.20*2.0",
+    "totalPrice": 200.47,
+    "unitPrice": 200.47,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 00572",
+    "name": "ხელის ვიბროლარტყა თავისი ძრავით  OSCAR EMT BULL",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 2 00573",
+    "name": "ხელის ვიბროლარტყა თავისი ძრავით OSCAR MECO 2.2",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 3 00377",
+    "name": "BOMAG-ის სატკეპნი ვიბრაციული ფილა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 3 01014",
+    "name": "D -25840  ატბოინიკი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 3 00379",
+    "name": "D 2594 IK სანგრევი ჩაქუჩი 12 კგ 1600 ვტ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 3 40490",
+    "name": "H36 არმატურის საჭრელი ჰიდრავლიკური დანადგარი",
+    "totalPrice": 1767.82,
+    "unitPrice": 1767.82,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 3 00168",
+    "name": "ალმასით საჭრელი აპარატი diamond coning iooi DD20",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 3 01015",
+    "name": "ასფალტმდები - ქვაფენილის ჩოთქიანი დანადგარი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 3 01016",
+    "name": "ბეტონის დასამუშავებელი მოწყობილობა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 3 01017",
+    "name": "ბეტონის ვიბროლარტყა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 3 01018",
+    "name": "ბეტონის მოსასწორებელი ვიბრაციული მოწყობილობა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 3 00422",
+    "name": "ბეტონის საპრიალებელი დანადგარი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 3,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 3 00425",
+    "name": "ბეტონის სახეხი აპარატი  GBR 15 CA",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 3 00442",
+    "name": "ელ.გამათბობელი 24 კვ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 3 01019",
+    "name": "ელ.პერფერატორი 5.8 კგ 1050 ვტ 9 X",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 3 00521",
+    "name": "მტვერსასრუტი GAS 55 M AFC",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 3 01020",
+    "name": "პერფერატორი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 3 01021",
+    "name": "პერფერატორი  GMB 7-46",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 3 00532",
+    "name": "პერფერატორი  HILTI  TE 70 AVR 230 V",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 3 01022",
+    "name": "პერფერატორი \"მაკიტა\" HR 5201",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 3 00533",
+    "name": "პერფერატორი TE 50 230 V",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 3 00558",
+    "name": "შესადუღებელი ინვენტორი PATON VDI 260 P DC MMAL",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 3 38744",
+    "name": "ჩასაძირი წყლის ტუმბო Wყ 130-15-11",
+    "totalPrice": 1432.98,
+    "unitPrice": 1432.98,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 3 00581",
+    "name": "ჯალამბარი  ელექტრო ძრავით",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 2 3 01023",
+    "name": "ჰაერის კომპრესორი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  }
+]
