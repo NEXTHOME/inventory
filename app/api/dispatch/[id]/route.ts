@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { NextRequest, NextResponse } from 'next/server'
 import { initDB, getDispatch, updateDispatch, deleteDispatch, getSetting, DispatchItem } from '../../../../lib/db'
 
