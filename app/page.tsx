@@ -354,6 +354,94 @@ function Stat({ label, value, accent }: { label: string; value: string; accent?:
   )
 }
 
+// ─── Global AI Search ────────────────────────────────────────────────────────
+
+type GlobalResult = {
+  code: string; name: string; quantity: number; unit: string
+  category: 'warehouse' | 'meoradi' | 'ziritadi'; categoryLabel: string
+}
+
+function GlobalSearch({ onClose, onSelect }: {
+  onClose: () => void
+  onSelect: (cat: 'warehouse' | 'meoradi' | 'ziritadi', code: string) => void
+}) {
+  const [q, setQ] = useState('')
+  const [results, setResults] = useState<GlobalResult[]>([])
+  const [loading, setLoading] = useState(false)
+  const [searched, setSearched] = useState(false)
+  const inputRef = useRef<HTMLInputElement>(null)
+
+  useEffect(() => { inputRef.current?.focus() }, [])
+
+  const search = async () => {
+    if (!q.trim()) return
+    setLoading(true); setSearched(false)
+    try {
+      const res = await fetch('/api/search-all', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query: q }),
+      })
+      const data = await res.json()
+      setResults(data.results || [])
+    } catch { setResults([]) }
+    setLoading(false); setSearched(true)
+  }
+
+  const catColor: Record<string, string> = {
+    warehouse: '#1a6e8a', meoradi: '#2e7d32', ziritadi: '#6a1e8a'
+  }
+
+  return (
+    <div style={{ position: 'fixed', inset: 0, zIndex: 100, background: 'rgba(0,0,0,0.6)', display: 'flex', flexDirection: 'column' }}
+      onClick={e => { if (e.target === e.currentTarget) onClose() }}>
+      <div style={{ background: '#fff', borderRadius: '0 0 20px 20px', padding: 16, boxShadow: '0 4px 24px rgba(0,0,0,0.2)' }}>
+        <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginBottom: 8 }}>
+          <button onClick={onClose} style={{ background: 'none', border: 'none', fontSize: 20, cursor: 'pointer', padding: '0 4px' }}>←</button>
+          <div style={{ fontSize: 14, fontWeight: 700, color: '#1a1a2e' }}>🔍 AI ძიება — ყველა კატეგორია</div>
+        </div>
+        <div style={{ display: 'flex', gap: 8 }}>
+          <input ref={inputRef} value={q} onChange={e => setQ(e.target.value)}
+            onKeyDown={e => e.key === 'Enter' && search()}
+            placeholder="მაგ: მილი 50-90, ლამინატი, ბეტონი..."
+            style={{ flex: 1, padding: '10px 14px', fontSize: 15, borderRadius: 10, border: '1.5px solid #e0e0e0', outline: 'none' }} />
+          <button onClick={search} disabled={loading || !q.trim()}
+            style={{ padding: '10px 18px', borderRadius: 10, background: loading ? '#ccc' : '#1a1a2e', color: '#fff', border: 'none', fontSize: 14, fontWeight: 700, cursor: loading ? 'default' : 'pointer' }}>
+            {loading ? '...' : 'ძიება'}
+          </button>
+        </div>
+      </div>
+      <div style={{ flex: 1, overflowY: 'auto', padding: '12px 12px 40px' }}>
+        {loading && (
+          <div style={{ textAlign: 'center', color: '#fff', fontSize: 14, marginTop: 40 }}>🔍 Gemini ეძებს...</div>
+        )}
+        {searched && !loading && results.length === 0 && (
+          <div style={{ textAlign: 'center', color: '#fff', fontSize: 14, marginTop: 40 }}>ვერ მოიძებნა</div>
+        )}
+        {results.map(r => (
+          <div key={r.code} onClick={() => { onSelect(r.category, r.code); onClose() }}
+            style={{ background: '#fff', borderRadius: 12, padding: '12px 14px', marginBottom: 10, cursor: 'pointer', boxShadow: '0 1px 6px rgba(0,0,0,0.1)' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8 }}>
+              <div style={{ flex: 1 }}>
+                <div style={{ fontSize: 13, fontWeight: 700, color: '#1a1a2e', marginBottom: 4, lineHeight: 1.3 }}>{r.name}</div>
+                <div style={{ fontSize: 12, color: '#888' }}>{r.code}</div>
+              </div>
+              <div style={{ flexShrink: 0, textAlign: 'right' }}>
+                <div style={{ fontSize: 13, fontWeight: 700, color: '#1a1a2e' }}>{r.quantity} {r.unit}</div>
+              </div>
+            </div>
+            <div style={{ marginTop: 8 }}>
+              <span style={{ fontSize: 11, fontWeight: 600, padding: '3px 10px', borderRadius: 20, background: catColor[r.category] + '20', color: catColor[r.category] }}>
+                {r.categoryLabel}
+              </span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 // ─── Main Page ───────────────────────────────────────────────────────────────
 
 const PAGE_SIZES = [10, 20, 100, 300]
@@ -367,6 +455,7 @@ export default function Home() {
   const [page, setPage] = useState(1)
   const [qtyOverrides, setQtyOverrides] = useState<Record<string, number>>({})
   const [dispatchSummary, setDispatchSummary] = useState<Record<string, {id:number;object_name:string;vehicle:string;created_at:string;quantity:number;unit:string}[]>>({})
+  const [showGlobalSearch, setShowGlobalSearch] = useState(false)
 
   const items = allData[category]
 
@@ -436,6 +525,12 @@ export default function Home() {
             }}>
               🧮 კალკ.
             </Link>
+            <button onClick={() => setShowGlobalSearch(true)} style={{
+              background: 'rgba(255,255,255,0.15)', color: '#fff', border: 'none',
+              padding: '6px 12px', borderRadius: 10, fontSize: 13, fontWeight: 600, cursor: 'pointer',
+            }}>
+              🔍
+            </button>
             <Link href="/profile" style={{
               textDecoration: 'none', background: 'rgba(255,255,255,0.15)', color: '#fff',
               padding: '6px 12px', borderRadius: 10, fontSize: 13, fontWeight: 600,
@@ -480,6 +575,17 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+      {showGlobalSearch && (
+        <GlobalSearch
+          onClose={() => setShowGlobalSearch(false)}
+          onSelect={(cat, code) => {
+            setCategory(cat)
+            setQuery(code)
+            setFilter('code')
+          }}
+        />
+      )}
 
       {/* Content */}
       <div style={{ padding: '12px 12px 80px' }}>
