@@ -790,5 +790,3205 @@
     "unitPrice": 0,
     "quantity": 1,
     "unit": "ცალი"
+  },
+  {
+    "code": "2150 3 38684",
+    "name": "189930000 - სამშენებლო კოჭი H20 eco 2.90m  (DOKA)",
+    "totalPrice": 5114.28,
+    "unitPrice": 33.65,
+    "quantity": 152,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 3 38686",
+    "name": "189931000 - სამშენებლო კოჭი H20 eco 3.90m  (DOKA)",
+    "totalPrice": 678.73,
+    "unitPrice": 45.25,
+    "quantity": 15,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 3 38631",
+    "name": "189936000 - სამშენებლო კოჭი H20 eco 2.45m  (DOKA)",
+    "totalPrice": 1038.65,
+    "unitPrice": 28.85,
+    "quantity": 36,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 3 38632",
+    "name": "189937000 - სამშენებლო კოჭი  beam H20 2.65 m (DOKA)",
+    "totalPrice": 10859.92,
+    "unitPrice": 31.21,
+    "quantity": 348,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 3 38630",
+    "name": "189940000 - სამშენებლო კოჭი H20 eco 1.80m  (DOKA)",
+    "totalPrice": 1229.42,
+    "unitPrice": 21.2,
+    "quantity": 58,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 3 38685",
+    "name": "18994100 - სამშენებლო კოჭი H20 eco 3.30m  (DOKA)",
+    "totalPrice": 11463.1,
+    "unitPrice": 39.94,
+    "quantity": 287,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 3 38633",
+    "name": "189943000 - სამშენებლო კოჭი H20 eco 4.50m  (DOKA)",
+    "totalPrice": 423.93,
+    "unitPrice": 52.99,
+    "quantity": 8,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 3 38639",
+    "name": "580365000 - Panel strut 340 IB (პანელის დგარი)",
+    "totalPrice": 1129.9,
+    "unitPrice": 376.63,
+    "quantity": 3,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 3 38641",
+    "name": "580914000 - Doka sprayer for release agent (პულივიზატორი)",
+    "totalPrice": 532.75,
+    "unitPrice": 532.75,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 3 38642",
+    "name": "581822000 - Tie rod 15.0mm galvanized 0.75m  (ტაიროდი გალვანიზირებული)",
+    "totalPrice": 1089.53,
+    "unitPrice": 7.62,
+    "quantity": 143,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 3 38643",
+    "name": "581966000 - Super plate 15.0 (ქანჩი)",
+    "totalPrice": 3807.1,
+    "unitPrice": 19.04,
+    "quantity": 200,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 3 38628",
+    "name": "586088400 - დგარი floor prop Eurex 20 eco 350 Doka",
+    "totalPrice": 49848.3,
+    "unitPrice": 81.45,
+    "quantity": 612,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 3 38627",
+    "name": "586179000 - Supporting head H20 DF (კოჭის თავი მცირე)",
+    "totalPrice": 1623.7,
+    "unitPrice": 17.09,
+    "quantity": 95,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 3 38626",
+    "name": "586294000 - Removable folding tripod eco (სამფეხი)",
+    "totalPrice": 20330.79,
+    "unitPrice": 64.75,
+    "quantity": 314,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 3 38688",
+    "name": "588416500 - Frami Xlife universal panel 0.75x3.00m (უნივერსალური პანელი)",
+    "totalPrice": 21984.39,
+    "unitPrice": 1221.36,
+    "quantity": 18,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 3 38635",
+    "name": "588428500 - Frami Xlife universal panel 0.90x3.00m (უნივერსალური პანელი)",
+    "totalPrice": 31779.33,
+    "unitPrice": 1588.97,
+    "quantity": 20,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 3 38636",
+    "name": "588433000 - Frami clamp (ჩამკეტი)",
+    "totalPrice": 2503.95,
+    "unitPrice": 27.82,
+    "quantity": 90,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 3 38638",
+    "name": "588438000 - Frami lifting hook (ასაწევი რგოლი)",
+    "totalPrice": 400.85,
+    "unitPrice": 200.43,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 3 38689",
+    "name": "588442000 - Frami bracket 60 (კონსოლი)",
+    "totalPrice": 3734.76,
+    "unitPrice": 177.85,
+    "quantity": 21,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 3 38637",
+    "name": "588479000 - Frami universal fixing bolt 5-12cm (უნივერსალური შემაერთებელი ღერო)",
+    "totalPrice": 2351.42,
+    "unitPrice": 11.04,
+    "quantity": 213,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 3 38634",
+    "name": "588678000 - Framax assembling tool (ამწყობი ჯოხი)",
+    "totalPrice": 79.74,
+    "unitPrice": 79.74,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 3 38640",
+    "name": "588945000 - Strut head EB (დგარის თავი)",
+    "totalPrice": 243,
+    "unitPrice": 40.5,
+    "quantity": 6,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2150 3 38865",
+    "name": "კოჭის სადგამი",
+    "totalPrice": 8437.91,
+    "unitPrice": 16.61,
+    "quantity": 508,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00375",
+    "name": "A 6 A ტიპის პლატფორმიანი კიბე",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 02997",
+    "name": "AK0011 აკრობატული კიბე",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 39553",
+    "name": "CGS T0040 ალუმინის ერთ სექციანი კიბე 14 საფეხურიანი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 4,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 45539",
+    "name": "CROWN CT44048 MC-ლაზერული თარაზო 360?, 30M",
+    "totalPrice": 205.3,
+    "unitPrice": 205.3,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 39953",
+    "name": "Ca 2000 Alcohol Detector ალკოტესტი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 02434",
+    "name": "D2650 K შალაშინი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02435",
+    "name": "DT-6823 პიკა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 00382",
+    "name": "E 5373 S 155 LTE MOBILE WIFI",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 38278",
+    "name": "INGCO შემბერ-შემწოვი  800W (AB8008 )მტვერსასრუტი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00584",
+    "name": "JETAL  2000 ტალი 2 ტ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00383",
+    "name": "KPC 131 ზEPINL-S შიდა კამერა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 40421",
+    "name": "LEO -?წყლის?ტუმბო?APm75",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 02436",
+    "name": "RH 32 A ბურღი პერფერატორი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 00169",
+    "name": "RTM 450 A ამწე დანადგარი 250/500 1000მ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 01953",
+    "name": "SC2050 circular saw (ცირკულარური ხერხი)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00389",
+    "name": "TVAზ 2814 G შიდა კამერის ლინზა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 02437",
+    "name": "WIFI MODEM E5573 s 320 LTE",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 00374",
+    "name": "ავზი 3000 ლიტ პოლიეთილენის ცილინდრულ-ჰორიზონტალური გვერდითთავიანი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00392",
+    "name": "ავზი 3000 ლურჯი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00393",
+    "name": "ავზი უჟანგავი 500 ლიტ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 3,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00214",
+    "name": "აკუმ. შურუფმომჭერი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 02987",
+    "name": "ალუმინის კიბე(ხარაჩო) ჰკ-მლ403",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 02438",
+    "name": "ალუმინის სამფეხი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02439",
+    "name": "ანომეტრი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 2,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 00399",
+    "name": "არმატურის საღუნი ინსტრუმენტი 12 მლ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00308",
+    "name": "არმატურის საღუნი ინსტრუმენტი 14-16",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00400",
+    "name": "არმატურის საჭრელი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 39484",
+    "name": "ბათქაშის შესასხურებელი პისტოლეტი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00403",
+    "name": "ბალახის სათიბელა ბენზინზე მომუშავე BC 4158",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00413",
+    "name": "ბენზო ხერხი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00414",
+    "name": "ბენზო ხერხი ჯაჭვით 58 სუპერ მაქსი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 3,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00416",
+    "name": "ბეტონის ვიბრატორის რეზინის მილი ფიტინგი ზN 50*4 M",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00420",
+    "name": "ბეტონის ნიმუშების ლითონის ყალიბი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00421",
+    "name": "ბეტონის საზომი კონუსის კომპლექტი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00427",
+    "name": "ბეტონის ყალიბი ხელის ინსტრუმენტი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 02440",
+    "name": "ბიტების ნაკრები \"ბოში'",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 00430",
+    "name": "ბურღი 32*600*920",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 02441",
+    "name": "გალოვკა ქანჩსადებების კრებული",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 35238",
+    "name": "გლინულის საღუნი 8მმ*14მმ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00434",
+    "name": "დანაყოფებიანი სახაზავი 58-იანი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00435",
+    "name": "დაფა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 35760",
+    "name": "დომკრატი  32 ტ.",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 35759",
+    "name": "დომკრატი  50 ტ.",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00475",
+    "name": "ვიბრატორის თავაკი 52 მმ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 02443",
+    "name": "ვიბრატორის შლანგი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02906",
+    "name": "ვიბრატორის შლანგი 48*4/რეზინის ფიტინგებით",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 02445",
+    "name": "ვიბრატორის შლანგი 50  6 მმ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 00225",
+    "name": "ზეთის გამათბობელი რადიატორი 913010",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 42555",
+    "name": "ზეთის რადიატორი 11 სექციანი IL 9231 ILITEK",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00342",
+    "name": "ზეთოვანი გამათბობელი 11",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 38795",
+    "name": "თერმომეტრი უკონტაქტო HW-1",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 3,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00478",
+    "name": "თუნუქის გასასწორებელი ხელსაწყო",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 02446",
+    "name": "ინსტრუმენტების ნაკრები",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 00485",
+    "name": "კერამიკული ფილების საჭრელი მექანიკური 600 მმ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00799",
+    "name": "კიბე",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 36061",
+    "name": "კიბე 9 საფეხურით",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02730",
+    "name": "ლაზერული ნიველირი ყuigo (Tinbox) EEU",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 36933",
+    "name": "ლეო-წყლის ტუმბო ყDX10-18-1.1A6935637403433",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 4,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 02485",
+    "name": "ლობზიკი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02447",
+    "name": "ლობზიკი  \"STAREX'",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02448",
+    "name": "მარწუხები",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 5,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 01431",
+    "name": "მატრასი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 55,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 02449",
+    "name": "მებათქაშის ინსტრუმენტი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 20,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 02450",
+    "name": "მილის საღები 4 Iზ MASALI BORU ANAH ხელის ინსტრუმენტი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02451",
+    "name": "მობილ. ტელეფონი CATERPPILLAR CAT B 25",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02453",
+    "name": "მობილ. ტელეფონი LENOVO A 2016 D/S LTE BLECK/G",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 00352",
+    "name": "მობილური  mobile and smartfones / lenovo a 7010",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 02452",
+    "name": "მობილური ტელეფონი HUAWEI P8 LITE 2017 GOLD",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02454",
+    "name": "მურსელი ჯაჭვური ხერხი BAIKAL 52 ც",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02455",
+    "name": "ნაბორი კლუჩების",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02456",
+    "name": "ნაგვის ურნა 120 ლიტრიანი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 3,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 38454",
+    "name": "ნიველირი GOL 26D + BT160 + GR500 (single carton)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00528",
+    "name": "ოპტიკური ნიველირის კომპლექტი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 40560",
+    "name": "პალეტის ურიკა 2500 კგ ორმაგი რეზინის თვლებით",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 41238",
+    "name": "პირამიდა რკინის (საშუალო)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 02483",
+    "name": "პროფილების დასაწყობი რკ ვერტ. სტელაჟი 1.3",
+    "totalPrice": 3.31,
+    "unitPrice": 3.31,
+    "quantity": 1,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02484",
+    "name": "პროფილების დასაწყობი ჰორიზონტალური რკ. სტელაჟი",
+    "totalPrice": 3.63,
+    "unitPrice": 3.63,
+    "quantity": 1,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02482",
+    "name": "პროფილების დასაწყობი. რკ. ჰორიზონტალური სტელაჟი 1",
+    "totalPrice": 2.33,
+    "unitPrice": 2.33,
+    "quantity": 1,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02457",
+    "name": "რადიატორი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02458",
+    "name": "რკინის სამუშაო მაგიდა 2.1*9.0*56",
+    "totalPrice": 8.94,
+    "unitPrice": 1.28,
+    "quantity": 7,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02459",
+    "name": "რკინის სამუშაო მაგიდა 2.2*1.45*9.0",
+    "totalPrice": 1.15,
+    "unitPrice": 1.15,
+    "quantity": 1,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02460",
+    "name": "რკინის სამუშაო მაგიდა 5.0*9.0*0.66",
+    "totalPrice": 1.76,
+    "unitPrice": 1.76,
+    "quantity": 1,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02303",
+    "name": "საბათქაშე დანადგარის ნაწილი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 3,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02461",
+    "name": "საზომი ხელსაწყო",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02463",
+    "name": "სათადარიგო დანის პირები",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 02465",
+    "name": "საპრიალებელი დისკი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02466",
+    "name": "სასაწყობე თაროები 3.3*2.0*0.72",
+    "totalPrice": 29.33,
+    "unitPrice": 9.78,
+    "quantity": 3,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02467",
+    "name": "სასაწყობე თაროები 3.5*2.1",
+    "totalPrice": 22.13,
+    "unitPrice": 11.07,
+    "quantity": 2,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 37171",
+    "name": "სასწორი 3 ტ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 02464",
+    "name": "საშენებლო ვიბრატორის შლანგი 4 მ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02468",
+    "name": "სტაციონალური ტელეფონი PANASONIC KX-TG",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 00549",
+    "name": "ტენიანობის საზომი ხელსაწყო",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00589",
+    "name": "ტენტი პე 600 სმ რულონით",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1100,
+    "unit": "კვ.მ"
+  },
+  {
+    "code": "2155 2 00550",
+    "name": "ტუმბო (ბათქაშის შემფრქვევი ხელსაწყო)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "კომპლექტი"
+  },
+  {
+    "code": "2155 2 02469",
+    "name": "ტუმბო ITT LOWARA-PM 16",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02470",
+    "name": "ტუმბო ყDX 10-16-0.75",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02471",
+    "name": "ფოცხი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00555",
+    "name": "ქანჩები  WT-BT 109 A",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 02472",
+    "name": "ქაფის ბალონი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 35764",
+    "name": "შურუპდამჭერი 18v DF457DWE",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 44687",
+    "name": "ცილინდრულ-ჰორიზონტალური ერთშრიანი ავზი თეთრი 2000ლტ NOVA",
+    "totalPrice": 141.74,
+    "unitPrice": 141.74,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00590",
+    "name": "ცირკულარული ხის ხერხი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 02747",
+    "name": "ცირკული ხერხი GKS 190 BOX",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00562",
+    "name": "წყლის ავზი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00564",
+    "name": "წყლის ავზი კვადრატი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00565",
+    "name": "წყლის დისპენსერი  BY 110-3 WHAITE",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00569",
+    "name": "წყლის ტუმბო სუპერმაქსი 5 AM",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 02473",
+    "name": "ხელის ამწე",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 00576",
+    "name": "ხელის ინსტრუმენტის ნაკრები",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 02474",
+    "name": "ხელის საჭიმი ბაგირი 1.6 ტ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 40716",
+    "name": "ხელსაწყოების ნაკრები 75 ნაჭერი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 02475",
+    "name": "ხერხი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 02479",
+    "name": "ჯალამბარი ტროსით 2ტ HP 02 A",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 2 39415",
+    "name": "ჯაჭვური ხერხი LUX GARDEN 18'",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 37487",
+    "name": "ჯაჭვური ხერხი LUX GARDEN 20'",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 45326",
+    "name": "ჰაერის კომპრესორი 50ლ (AC25508)",
+    "totalPrice": 355.65,
+    "unitPrice": 355.65,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 37183",
+    "name": "ჰაერის კომპრესორი HYUNDAI HK.HM2050B - 50 ლ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 2 00582",
+    "name": "ჰიდრავლიკური ურიკა 2 ტონიანი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 49506",
+    "name": "1836-10 ბენზო-ხერხი",
+    "totalPrice": 149.37,
+    "unitPrice": 149.37,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 38787",
+    "name": "ADELINO წყლის ტუმბო ყB80G EU",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02486",
+    "name": "AG 12 R კუთხის სახეხი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 02487",
+    "name": "AG 180 BV კუთხსახეხი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02488",
+    "name": "AG 230 B კუთხსახეხი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 02489",
+    "name": "AG 230 E კუთხის ხერხი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 02490",
+    "name": "AG 230 E კუთხსახეხი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 48497",
+    "name": "COOFIX სანგრევი პერფერატორი 1600W (CF-DH012)",
+    "totalPrice": 290.63,
+    "unitPrice": 290.63,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02491",
+    "name": "CS 210 ხელის ელექტრო ხერხი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 00378",
+    "name": "CT 10129 ელექტრო დრელი ჩაქუჩით  750 W",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 43351",
+    "name": "CT10113-ელექტრო დრელი 280W",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 34395",
+    "name": "CT13489-კუთხლივ სახეხი ხელსაწყო \"ბარგალკა\" 230mm 2600W",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 40020",
+    "name": "CT15188-ცირკული ხერხი 190mm 1500W",
+    "totalPrice": 153.73,
+    "unitPrice": 153.73,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 37710",
+    "name": "CT18032-ელექტრო პნევმატური დრელი 850W",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 40713",
+    "name": "CT31004-ელ. პულივიზატორი 500W",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 45216",
+    "name": "EMTOP სახვრეტელა დარტყმითი 1100ვტ 13მმ EMDL1101",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 51250",
+    "name": "EW000003 ელექტრო ამწე 220/50Hზ 150-300KG 30M",
+    "totalPrice": 229.86,
+    "unitPrice": 229.86,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 47849",
+    "name": "EW000005 ელექტრო ამწე 220/50Hზ 250-500KG 30M",
+    "totalPrice": 184.77,
+    "unitPrice": 184.77,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 49688",
+    "name": "EXPYKYყ-300 ბუნიკის საპრესი 300MM",
+    "totalPrice": 76.13,
+    "unitPrice": 76.13,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 37683",
+    "name": "FMX16001 ელექტრო მიქსერი 1600ვტ / ELECTRC MIXER",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 42546",
+    "name": "G-ყDX1.5-25-055 წყლის ტუმბო",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 36645",
+    "name": "GBH 2-28 დრელ პერფერატორი ბოში",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 03006",
+    "name": "GSR180-LI 2x1.5Ah (დრელი აკუმულატორზე)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 47331",
+    "name": "Li-Ion ელ. ხრახნდამჭერი კომპლექტში 4V (CSDLI0403)",
+    "totalPrice": 12.4,
+    "unitPrice": 12.4,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 43808",
+    "name": "Lithium-Ion ელ. ხრახნდამჭერი ჩაქუჩით 20V (CIDLI20031)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 51428",
+    "name": "Lutian ბენზინის ძრავი 170 F LS208",
+    "totalPrice": 271.69,
+    "unitPrice": 271.69,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 49644",
+    "name": "PA1000*20M ელ ტალი 1000კგ 20 მეტრი",
+    "totalPrice": 314.02,
+    "unitPrice": 314.02,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 38393",
+    "name": "SDS-MAX ელ.პნევმატური პერფერატორი 1500W (PDB15006)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 44922",
+    "name": "Schpindel წყლის ტუმბო ყDX10-16-0.75TK",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 36216",
+    "name": "TMC350 350W ვიბრაციული საპრიალებელი ხელსაწყო TRYTON",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00391",
+    "name": "ადაფტორი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00395",
+    "name": "აირმჭრელი აპარატი 1429/9",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00585",
+    "name": "აპარატი შედუღების (კემპი)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02492",
+    "name": "ატბოინიკი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 00404",
+    "name": "ბალგარკა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00409",
+    "name": "ბალგარკა  GWS 22-230 BOSCH",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 5,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 37144",
+    "name": "ბალგარკა  დვტ 125 (WS08-125)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02493",
+    "name": "ბალგარკა \"პრიტერი'",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 00406",
+    "name": "ბალგარკა 125 მმ 1200 ვ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02494",
+    "name": "ბალგარკა 1300",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 02495",
+    "name": "ბალგარკა 230",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 00407",
+    "name": "ბალგარკა 230 მმ 2380 ვ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02496",
+    "name": "ბალგარკა 2350 ვტ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 00408",
+    "name": "ბალგარკა CAT 4180",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00405",
+    "name": "ბალგარკა GWS 660 ANGLE GRINDER",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00410",
+    "name": "ბალგარკა GWS 6700",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00412",
+    "name": "ბალგარკა MAKITA GA9020 RO 2200 W 230 MM",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00411",
+    "name": "ბალგარკა MAKITA-GA 4530",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02497",
+    "name": "ბალგარკა W 23-230",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 02498",
+    "name": "ბალგარკა ინტერსკოლ (2300 W)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 02499",
+    "name": "ბალგარკა ინტერსკოლ 125/1300",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 43737",
+    "name": "ბარგალკა 1010W (AG10108)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 37699",
+    "name": "ბარგალკა 1010W (AG10108-5)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02599",
+    "name": "ბარგალკა 950W (AG8528)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02500",
+    "name": "ბენზოხერხი ლიდერი GS-5000",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00415",
+    "name": "ბეტონის ვიბრატორი 4 მ-იან შლანგთან ერთად",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02501",
+    "name": "ბეტონის ვიბრატორი ზN-1.5 KM",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 02502",
+    "name": "ბეტონის ვიბრატორი ზN-1.5 KW",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 00418",
+    "name": "ბეტონის ვიბრატორის ძრავი  ზN 70",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02016",
+    "name": "ბეტონის ვიბრატორის ძრავი 160 2.2",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00417",
+    "name": "ბეტონის ვიბრატორის ძრავი 2.2 კვტ 2203",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00419",
+    "name": "ბეტონის ვიბრატორის ძრავი ზN 90",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02503",
+    "name": "ბურღი ბოში",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 00436",
+    "name": "დისკური ხერხი 1350 ვტ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02504",
+    "name": "დისკური ხერხი PDP-CS 190 MM 1500 W",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 35334",
+    "name": "დისპენსერი HDM 500 box ქიმიური ანკერის პისტოლეტი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02505",
+    "name": "დრელ პერფერატორი 220 ვ პატრონის დიამეტრი 13 მმ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 00586",
+    "name": "დრელი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02506",
+    "name": "დრელი 650 WATT",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 00587",
+    "name": "დრელი GSB 16 RE PERCUDDION DRILL",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02507",
+    "name": "დრელი ინტერსკოლ (1000) ვ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 02508",
+    "name": "დრელი ინტერსკოლ (6503)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 02289",
+    "name": "დრელი პერფერატორი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 00310",
+    "name": "დრელი პერფერატორი HR 2470",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02509",
+    "name": "დრელი პორტერ ph 30",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 02018",
+    "name": "ელ დემკვეთი 250 ამპ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 44781",
+    "name": "ელ წყლის გამაცხელებელი ER 100 V AყUAVERSO",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 35730",
+    "name": "ელ ხელსაწყო ზუმფარისათვის (მტვერსასრუტით) 600MM (DWS6003)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02512",
+    "name": "ელ. ბალგარკა 1200",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 50276",
+    "name": "ელ. ბუჩქების საკრეჭი",
+    "totalPrice": 539.02,
+    "unitPrice": 539.02,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02514",
+    "name": "ელ. დრელი 1100 ვტ 13 მმ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 02510",
+    "name": "ელ. დრელი სახრახნისი STAREX 12 V",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 01986",
+    "name": "ელ. დრუჟბა400მმ 1800ვტ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 46689",
+    "name": "ელ. პერფორატორი 1500ვტ, 5.5 ჯ (ტოტალ)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 41327",
+    "name": "ელ. პნევმატური დრელი (პერფერატორი) (RGH9028-2)",
+    "totalPrice": 31.62,
+    "unitPrice": 31.62,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 40532",
+    "name": "ელ. პნევმატური დრელი (პერფერატორი) (RGH9028-2)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 46625",
+    "name": "ელ. პნევმატური დრელი (პერფორატორი) 1500W (RH150038)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 47602",
+    "name": "ელ. პნევმატური დრელი (პერფორატორი) 950W (RGH9528-2)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02511",
+    "name": "ელ. რადიალი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 02515",
+    "name": "ელ. რეგულატორი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 02516",
+    "name": "ელ. სასწორი 300 კგ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 02517",
+    "name": "ელ. საფრეზი MARIX EM-GAS 135",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 01096",
+    "name": "ელ. საჭრელი ბალგარკა 115 მმ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02519",
+    "name": "ელ. ხერხი energomam",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 37463",
+    "name": "ელ.ბალგარკა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00438",
+    "name": "ელ.დრელე 13 მმ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02597",
+    "name": "ელ.დრელი 280W (ED2808)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 37586",
+    "name": "ელ.დრელი ჩაქუჩით 850W(ID8508)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00440",
+    "name": "ელ.ვერტიკალური მეტალის საჭრელი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 42237",
+    "name": "ელ.კუთხსახეხი (ბარგალკა) 2000W (AG200018)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00222",
+    "name": "ელ.პერფერატორი  INSTAR EPR 31950 950 BT",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02598",
+    "name": "ელ.პნევმატური დრელი (პერფერატორი) 800W (RGH9018)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 40394",
+    "name": "ელ.პნევმატური დრელი (პერფერატორი) 800W RGH9028",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00223",
+    "name": "ელ.საშკურკი GSS 280 AVE",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00441",
+    "name": "ელ.ტალი 500 კგ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00439",
+    "name": "ელ.ხერხი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00462",
+    "name": "ელექტრო გამათბობელი  NIKAI 837-N",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00461",
+    "name": "ელექტრო გამათბობელი  NIKAI 838-N",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02520",
+    "name": "ელექტრო გამათბობელი NIKAI 842",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 00463",
+    "name": "ელექტრო დარტყმითი ჩაქუჩი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00465",
+    "name": "ელექტრო დრუჟბა 400 მმ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 36932",
+    "name": "ელექტრო მიქსერი ბეტონისთვის 0.80KW (CM30-1)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02521",
+    "name": "ელექტრო პლევმატური დრელი 26 მმ 800 ვ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 00466",
+    "name": "ელექტრო ტალი 1000 კგ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00467",
+    "name": "ელექტრო ტალის სამაგრი 1000-750",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00468",
+    "name": "ელექტრო წრიული ხერხი (ლაზერით)190 მმ 1600 ვ RTR",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00469",
+    "name": "ელექტრო ხერხი (ლობზიკი) 110 მმ 750 ვ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00319",
+    "name": "ელექტრო ხრახნდამჭერი აკუმულ.მომუშავე 10 მმ 14.4",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00470",
+    "name": "ელექტროპლევმატური დრელი 38 მმ 110 ვ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 49044",
+    "name": "ვერტიკალური ელ.სახვრეტი 550W (CF-BD002)",
+    "totalPrice": 218.01,
+    "unitPrice": 218.01,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00471",
+    "name": "ვიბრატორი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00472",
+    "name": "ვიბრატორი 2.2 შლანგით (36*6)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00473",
+    "name": "ვიბრატორი 4 მ დ 50",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00474",
+    "name": "ვიბრატორი 6 მ დ 50",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 38438",
+    "name": "ვიბრატორი 6მ დ50",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00477",
+    "name": "ზუმფარის აპარატი REX renovateur exterieur puisse nce 1300 w",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 40289",
+    "name": "თერმომეტრი ელექტრო უკონტაქტო 601 #1 (შენზენ ზენგი - ჩინეთი)  - 01.2030",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 41980",
+    "name": "ინტელექტუალური სენსორული საპნის გამანაწილებელი თერმომეტრით",
+    "totalPrice": 66.55,
+    "unitPrice": 66.55,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00488",
+    "name": "კომპრესორი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00489",
+    "name": "კონდენციონერი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00490",
+    "name": "კონდენციონერი  AUX ASW-H09A4/FIR1D1-EU",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00492",
+    "name": "კონდენციონერი კომპლექტში HUNDAI EST 30 HNI",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02522",
+    "name": "კონდიციონერი BOSCH BIზMA /109609+complect",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 00494",
+    "name": "კუთხვილსახეხი მანქანა 2200 ვატი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02523",
+    "name": "კუთხის საჭრელი მანქანა 2000 3D =230 MM",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 02524",
+    "name": "კუთხის საჭრელი ხერხი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 00498",
+    "name": "კუთხსახეხი  GWS 660",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02525",
+    "name": "კუთხსახეხი 23*230",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 48110",
+    "name": "კუთხსახეხი 230 მმ 2600 ვტ INGCO AG26008",
+    "totalPrice": 81.36,
+    "unitPrice": 81.36,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 42720",
+    "name": "კუთხსახეხი 230 მმ 3000ვტ INGCO AG30008",
+    "totalPrice": 117.2,
+    "unitPrice": 117.2,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 40595",
+    "name": "კუთხსახეხი GWS 11-125.",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00497",
+    "name": "კუთხსახეხი GWS 20-230 H",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00229",
+    "name": "კუთხსახეხი GWS 22-230 JH",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 38562",
+    "name": "კუთხსახეხი GWS 24-230 H",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02526",
+    "name": "კუთხსახეხი მანქანა 230/2200",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 02527",
+    "name": "ლამინატის საჭრელი ქეთ 11201",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 38976",
+    "name": "ლეო -წყლის ტუმბო APM376935637406717",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02528",
+    "name": "მექანიკური ხერხი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 00519",
+    "name": "მრგვალი ხერხი 190 მ BOSCH",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 4,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00520",
+    "name": "მტვერსასრუტი  SVC-1460 VACUUM CLEANER",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00522",
+    "name": "მტვერსასრუტი GRAETზ-GR544",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00523",
+    "name": "მტვერსასრუტი VCX 70-2000 BI 2 ABS",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00524",
+    "name": "მტვერსასრუტი სველი-მშრალი VCX 70-2000 BI",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02529",
+    "name": "ნასოსი KF/3",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02530",
+    "name": "ნასოსი feka 600 m-a",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 45461",
+    "name": "პალეტის ურიკა 2500 კგ ნეილონის თვლებით",
+    "totalPrice": 294.34,
+    "unitPrice": 294.34,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02531",
+    "name": "პატარა მაცივარი STILENS-ST-90S",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 39324",
+    "name": "პერფერატორი  1000ვ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00529",
+    "name": "პერფერატორი 26 მმ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 37543",
+    "name": "პერფერატორი 780w. 24mm HR2470",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00530",
+    "name": "პერფერატორი 800 ვტ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00531",
+    "name": "პერფერატორი 900 ვტ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 41526",
+    "name": "პერფორატორი 2.5 ჯ 800 ვტ INGCO RGH9028",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 46582",
+    "name": "პერფორატორი 5.5 ჯ 1500 ვტ INGCO RH150028",
+    "totalPrice": 34.67,
+    "unitPrice": 34.67,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02592",
+    "name": "პლასტმასის შესადუღებელი უთო 800W-1500W (PTWT215002)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00237",
+    "name": "პულივიზატორი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00538",
+    "name": "პულივიზატორი პს-24",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02535",
+    "name": "სამშენებლო ვიბრატორი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 41978",
+    "name": "სამშენებლო ვიბრატორის ძრავი 2.5 კვ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00545",
+    "name": "სასემდუღებლო აპარატი მონსტიკ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00544",
+    "name": "საშემდუღებლო აპარატი 300 ა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02074",
+    "name": "სვარკის აპარატი 400 ა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 02537",
+    "name": "სიღრმის ვიბრატორი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 39747",
+    "name": "ტანკი DW680-ყS  შალაშინი ელექტრო",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 43813",
+    "name": "ტუმბო XP65-12F-300",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 3,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00946",
+    "name": "ტუმბო წყლის",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00553",
+    "name": "უთო 20-40 კპმპლ.უთოს თავით",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 50175",
+    "name": "უნახშირო უსადენო ბურღი (ხრახნდამჭერი) 1.5ahX20V (WCDP552)",
+    "totalPrice": 96.31,
+    "unitPrice": 96.31,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 40542",
+    "name": "ქსელის მარშრუტიზატორი Tenda 4G680V2.0 300Mbps Wireless N300 4G  LTE and VoLTE Router",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00557",
+    "name": "შედუღების აპარატი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 36761",
+    "name": "შედუღების აპარატი (ლითონის) (ING-MMA2006)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 38508",
+    "name": "შემადუღებელი აპარატი 400 S",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 02536",
+    "name": "შემდუღებლის აპარატი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 03282",
+    "name": "შესადუღებელი ინვერტორი ????? ???-200E",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 40614",
+    "name": "წყის ტუმბო 1500W (CPM15008)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 41555",
+    "name": "წყლის გამაცხელებელი EcoStar G10G1 White Glass",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 42485",
+    "name": "წყლის ტუმბო 1500 ვტ INGCO CPM15001",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 44462",
+    "name": "წყლის ტუმბო JET-100L წნევის მარეგულირებელით EPC-1",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 43552",
+    "name": "წყლის ტუმბო JET-200",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 40482",
+    "name": "წყლის ტუმბო ყDX10-16-0.75 Y",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 4,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 39311",
+    "name": "წყლის ტუმბო ყDX15-18-1.1 Y",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 44503",
+    "name": "წყლის წნევის ტუმბო CM -60 Bar",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 00571",
+    "name": "ხელის ელექტრო მიქსერი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02538",
+    "name": "ხის ელექტრო ხერხი სიმძლავრე 1350 ვ ხერხი 184 მმ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 3 00580",
+    "name": "ხის ცირკული GKS 190 BOX FORTABLE CIRKULAR",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02539",
+    "name": "ჯაჭვური ელექტრო ხერხი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 3 02540",
+    "name": "ჯაჭვური ხერხი ( modern techiqs XXI)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 4 00344",
+    "name": "კომპ.მაგიდა  120 ს/მ თაროთი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 6,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 4 01429",
+    "name": "ლითონის კარადა",
+    "totalPrice": 186.75,
+    "unitPrice": 23.34,
+    "quantity": 8,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 4 01430",
+    "name": "ლითონის საწოლი",
+    "totalPrice": 823.63,
+    "unitPrice": 21.67,
+    "quantity": 38,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 4 00505",
+    "name": "მაგიდა 1.2*0.75=0.9 კვ.მ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 4 02541",
+    "name": "ნახევარწრე",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 4 00362",
+    "name": "სავარძელი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 4 00539",
+    "name": "სათათბირო მაგიდა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 4 00316",
+    "name": "საოფისე მაგიდა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 3,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 4 00317",
+    "name": "საოფისე მაგიდა 120/65/75",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 4 02642",
+    "name": "საოფისე სავარძელი",
+    "totalPrice": 112.9,
+    "unitPrice": 112.9,
+    "quantity": 1,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 4 00541",
+    "name": "საოფისე სავარძელი  SX-3310",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 5,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 4 00366",
+    "name": "საოფისე სავარძელი HJ-013-S-1",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 4 38199",
+    "name": "საოფისე სკამი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 11,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 4 00238",
+    "name": "სკამი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 4 00369",
+    "name": "სკამი  D 607",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 4 00371",
+    "name": "სკამი ნაჭრის ზედაპირით, მეტალის ფეით შავი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 8,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 4 02547",
+    "name": "ტანსაცმლის საკიდი სხ-142",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 5 00336",
+    "name": "CE 651 A  პრინტერი HP P 1102",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 5 00337",
+    "name": "CE 712 A პრინტერი  HP CL CP 5225 CH",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 5 00402",
+    "name": "ასლგადამღები აპარატი  CANON R 2318",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 5 00347",
+    "name": "კომპიუტერი  კომპლექტში",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 5 00348",
+    "name": "კომპიუტერი კომპლექტში  HP PRO 3500 MT მონიტორით",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 5 00514",
+    "name": "მონიტორი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 5 00516",
+    "name": "მონიტორი PHILIPS 244 E 24",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 5 45222",
+    "name": "მრავალ ფუნქციური პრინტერი - HP - 107A/4ზB77A",
+    "totalPrice": 130.98,
+    "unitPrice": 130.98,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 5 00354",
+    "name": "მრავალფ.პრინტერი  HP M 130NW/G3ყ53A USB კაბელით",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 5 02549",
+    "name": "მყარი დისკი DATA ITB USB 3.0",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 5 00357",
+    "name": "პერსონალური კომპიუტერი  N024VN5568EMA01 UBU C",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 5 00535",
+    "name": "პრინტერი  HP LASERJET FRO M 1132 MEP",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 5 00360",
+    "name": "პრინტერი HP LASERGET P 1102",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 5 00536",
+    "name": "პროცესორი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 6 02575",
+    "name": "მყარი რეზინის ნაწარმი ბორდიურის ტექსტურული ფორმა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 5,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 6 01727",
+    "name": "პლასტმასის ყალიბების დეტალი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 251,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 6 47668",
+    "name": "სამშენებლო  ხარაჩო ბილიკი",
+    "totalPrice": 2605.8,
+    "unitPrice": 78.96,
+    "quantity": 33,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 6 36522",
+    "name": "ხარაჩოს საყრდენი ფეხი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 0,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 7 00387",
+    "name": "TLKR T 80 სამოყვარულო რადიოსადგური",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 3,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 7 00388",
+    "name": "TR-86-A-1 რადიო გადამცემი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 7 02653",
+    "name": "მოდემი (მაგთიკომი) EVDO",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 7 00540",
+    "name": "სამოყვარულეო რ/ს კომპლექტში",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 4,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 7 40559",
+    "name": "სამოყვარულო  ხელის რადიოსადგური TF 515",
+    "totalPrice": 21.32,
+    "unitPrice": 21.32,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 8 00376",
+    "name": "ATP - 120-12 კვების ბლოკი 10 ამპ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 8 00385",
+    "name": "RB 750 GR 3 (როუტერი)",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 8 00386",
+    "name": "S 108 (8-PORT 10/100 MBPS TAST ETHEMENT სვიჩი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 8 00390",
+    "name": "UAP-AC-LR  დაშვების წერტილი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 8 00219",
+    "name": "დაშვების პროგრამა  LS ostium lite",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 8 00480",
+    "name": "კამერა  DS-T 116",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 3,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 8 00483",
+    "name": "კამერა  DS-T 200 3.6",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 8 00481",
+    "name": "კამერა  DS-T 226",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 2,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 8 00227",
+    "name": "კამერა  HIKVISION DS-2CE56COT-IRM 2.8 MM",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 8 38381",
+    "name": "კამერის სადგამი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 16,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 8 00486",
+    "name": "კვების ბლოკი 220/12 30 ა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 8 00507",
+    "name": "მედია კონვერტერი 10M\\100M 1310/1550 NM 20KM",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 8 38380",
+    "name": "მზის ბატარეა",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 8 00515",
+    "name": "მონიტორი (ვიდეო თვალისათვის)ACER K 192HყLR 18",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 8 00517",
+    "name": "მონიტორი ვიდეო კამერებისათვის  DELL E 19 16H 18.5 LED 136",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 8 00526",
+    "name": "მყარი დისკი  WD30EFRX-WD RED 3 TH NES",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 8 00525",
+    "name": "მყარი დისკი HDD 3 TB ST 3000VX006",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 8 38379",
+    "name": "სათვალთვალო კამერები",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 7,
+    "unit": "ც"
+  },
+  {
+    "code": "2155 8 00548",
+    "name": "სიგნალის გარდამქნელი",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 20,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 8 00559",
+    "name": "ჩამწერი DS 7108HყHI-F 1/N",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 8 00560",
+    "name": "ჩამწერი DS-H 104 G",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
+  },
+  {
+    "code": "2155 8 00561",
+    "name": "ჩამწერი DS-H 108 ყ",
+    "totalPrice": 0,
+    "unitPrice": 0,
+    "quantity": 1,
+    "unit": "ცალი"
   }
 ]

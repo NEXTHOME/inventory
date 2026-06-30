@@ -50,7 +50,7 @@ function fmtShortDate(s: string) {
   return `${d.getDate().toString().padStart(2,'0')}.${(d.getMonth()+1).toString().padStart(2,'0')}.${d.getFullYear()}`
 }
 
-function compressImage(file: File, maxWidth = 1200): Promise<string> {
+function compressImage(file: File, maxWidth = 1000): Promise<string> {
   return new Promise((resolve, reject) => {
     const reader = new FileReader()
     reader.onload = e => {
@@ -62,7 +62,7 @@ function compressImage(file: File, maxWidth = 1200): Promise<string> {
         canvas.height = img.height * scale
         const ctx = canvas.getContext('2d')!
         ctx.drawImage(img, 0, 0, canvas.width, canvas.height)
-        resolve(canvas.toDataURL('image/jpeg', 0.75))
+        resolve(canvas.toDataURL('image/jpeg', 0.6))
       }
       img.onerror = reject
       img.src = e.target?.result as string
@@ -128,14 +128,15 @@ export default function GatanaPage() {
   const [photos, setPhotos] = useState<string[]>([])
   const [submitting, setSubmitting] = useState(false)
   const [successMsg, setSuccessMsg] = useState('')
+  const [errorMsg, setErrorMsg] = useState('')
   const [aiLoading, setAiLoading] = useState(false)
   const [aiCodes, setAiCodes] = useState<string[] | null>(null)
   const [editingNoteCode, setEditingNoteCode] = useState<string | null>(null)
   const photoInputRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
-    fetch('/api/quantity').then(r => r.json()).then(setQtyOverrides).catch(() => {})
-    fetch('/api/dispatch-summary').then(r => r.json()).then(setDispatchSummary).catch(() => {})
+    fetch('/api/quantity', { cache: 'no-store' }).then(r => r.json()).then(setQtyOverrides).catch(() => {})
+    fetch('/api/dispatch-summary', { cache: 'no-store' }).then(r => r.json()).then(setDispatchSummary).catch(() => {})
   }, [])
 
   const items = allData[category]
@@ -169,6 +170,10 @@ export default function GatanaPage() {
     setCart(prev => prev.map(c => c.code === code ? { ...c, dispatchQty: qty } : c))
   }
 
+  // Direct typing — allows 0 / empty while editing without removing the item
+  const setCartQty = (code: string, qty: number) =>
+    setCart(prev => prev.map(c => c.code === code ? { ...c, dispatchQty: isNaN(qty) ? 0 : qty } : c))
+
   const updateCartNote = (code: string, note: string) =>
     setCart(prev => prev.map(c => c.code === code ? { ...c, note } : c))
 
@@ -199,6 +204,7 @@ export default function GatanaPage() {
   const handleSubmit = async () => {
     if (!objectName.trim() || !vehicle.trim() || !cart.length) return
     setSubmitting(true)
+    setErrorMsg('')
     try {
       const res = await fetch('/api/dispatch', {
         method: 'POST',
@@ -214,7 +220,18 @@ export default function GatanaPage() {
           })),
         }),
       })
-      const data = await res.json()
+      if (!res.ok) {
+        const txt = res.status === 413
+          ? 'ფოტოები ძალიან დიდია — წაშალე ერთი-ორი ფოტო და სცადე ხელახლა'
+          : `შენახვა ვერ მოხერხდა (კოდი ${res.status}). სცადე ხელახლა.`
+        setErrorMsg(txt)
+        return
+      }
+      const data = await res.json().catch(() => ({}))
+      if (!data.id) {
+        setErrorMsg('სერვერმა ID ვერ დააბრუნა — შენახვა ვერ მოხერხდა. სცადე ხელახლა.')
+        return
+      }
       if (data.id) {
         const newOverrides = { ...qtyOverrides }
         const newSummary = { ...dispatchSummary }
@@ -234,6 +251,8 @@ export default function GatanaPage() {
         setSuccessMsg(`✓ გატანა #${data.id} შეინახა`)
         setTimeout(() => setSuccessMsg(''), 4000)
       }
+    } catch {
+      setErrorMsg('ქსელის შეცდომა — ვერ დაუკავშირდა სერვერს. შეამოწმე ინტერნეტი და სცადე ხელახლა.')
     } finally { setSubmitting(false) }
   }
 
@@ -305,19 +324,19 @@ export default function GatanaPage() {
           const isEditingNote = editingNoteCode === item.code
           const dispatched = dispatchSummary[item.code] || []
           return (
-            <div key={item.code} style={{ background: '#fff', borderRadius: 12, marginBottom: 8, boxShadow: '0 1px 4px rgba(0,0,0,0.07)', opacity: qty === 0 ? 0.55 : 1, overflow: 'hidden' }}>
-              <div style={{ padding: '11px 14px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 10 }}>
+            <div key={item.code} style={{ background: '#fff', borderRadius: 14, marginBottom: 8, border: inCart ? '1px solid #1a1a2e' : '1px solid #eef0f3', boxShadow: inCart ? '0 4px 16px rgba(26,26,46,0.12)' : '0 1px 2px rgba(16,24,40,0.05)', opacity: qty === 0 ? 0.55 : 1, overflow: 'hidden', transition: 'box-shadow 0.2s, border-color 0.2s' }}>
+              <div style={{ padding: '12px 14px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 10 }}>
                 <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap', marginBottom: 3 }}>
-                    <span style={{ fontSize: 11, color: '#e94560', fontWeight: 600 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap', marginBottom: 5 }}>
+                    <span style={{ fontSize: 11, color: '#e94560', fontWeight: 700, background: '#fff0f3', padding: '2px 8px', borderRadius: 6, letterSpacing: '0.02em' }}>
                       {getLastPart(item.code)}
                     </span>
-                    <span style={{ fontSize: 11, fontWeight: 700, color: qty === 0 ? '#e94560' : qty <= 3 ? '#d97706' : '#22a06b' }}>
-                      ({qty} {item.unit || ''})
+                    <span style={{ fontSize: 11, fontWeight: 700, color: qty === 0 ? '#e11d48' : qty <= 3 ? '#d97706' : '#16a34a', background: qty === 0 ? '#fff1f2' : qty <= 3 ? '#fff7ed' : '#f0fdf4', padding: '2px 8px', borderRadius: 6 }}>
+                      {qty} {item.unit || ''}
                     </span>
                     <DispatchBadge entries={dispatched} />
                   </div>
-                  <div style={{ fontSize: 13, fontWeight: 500, color: '#111', lineHeight: 1.3, overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
+                  <div style={{ fontSize: 13.5, fontWeight: 600, color: '#0f172a', lineHeight: 1.35, overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
                     {item.name}
                   </div>
                 </div>
@@ -325,7 +344,15 @@ export default function GatanaPage() {
                   {inCart ? (
                     <div style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
                       <button onClick={() => updateCartQty(item.code, inCart.dispatchQty - 1)} style={qtyBtnSt}>−</button>
-                      <span style={{ fontSize: 14, fontWeight: 700, minWidth: 20, textAlign: 'center' }}>{inCart.dispatchQty}</span>
+                      <input
+                        type="number" inputMode="decimal" min={0} step="any"
+                        aria-label="რაოდენობა"
+                        value={inCart.dispatchQty}
+                        onChange={e => setCartQty(item.code, parseFloat(e.target.value))}
+                        onBlur={() => { if (!inCart.dispatchQty) removeFromCart(item.code) }}
+                        style={qtyInpSt}
+                      />
+                      {item.unit && <span style={{ fontSize: 11, color: '#888', minWidth: 24 }}>{item.unit}</span>}
                       <button onClick={() => updateCartQty(item.code, inCart.dispatchQty + 1)} style={qtyBtnSt}>+</button>
                       <button
                         onClick={() => setEditingNoteCode(isEditingNote ? null : item.code)}
@@ -375,7 +402,15 @@ export default function GatanaPage() {
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                     <button onClick={() => updateCartQty(c.code, c.dispatchQty - 1)} style={qtyBtnSt}>−</button>
-                    <span style={{ fontSize: 14, fontWeight: 700, minWidth: 24, textAlign: 'center' }}>{c.dispatchQty}</span>
+                    <input
+                      type="number" inputMode="decimal" min={0} step="any"
+                      aria-label="რაოდენობა"
+                      value={c.dispatchQty}
+                      onChange={e => setCartQty(c.code, parseFloat(e.target.value))}
+                      onBlur={() => { if (!c.dispatchQty) removeFromCart(c.code) }}
+                      style={qtyInpSt}
+                    />
+                    {c.unit && <span style={{ fontSize: 11, color: '#888', minWidth: 24 }}>{c.unit}</span>}
                     <button onClick={() => updateCartQty(c.code, c.dispatchQty + 1)} style={qtyBtnSt}>+</button>
                     <button onClick={() => removeFromCart(c.code)} style={{ background: 'none', border: 'none', color: '#e94560', cursor: 'pointer', fontSize: 16, padding: '0 4px' }}>🗑</button>
                   </div>
@@ -430,6 +465,11 @@ export default function GatanaPage() {
                 </div>
               ))}
             </div>
+            {errorMsg && (
+              <div style={{ background: '#fdecea', color: '#c0392b', padding: '10px 14px', borderRadius: 10, fontSize: 13, fontWeight: 600, marginBottom: 12 }}>
+                ⚠️ {errorMsg}
+              </div>
+            )}
             <div style={{ display: 'flex', gap: 10 }}>
               <button onClick={() => setShowConfirm(false)} style={{ flex: 1, padding: '13px', background: '#f0f0f0', color: '#333', border: 'none', borderRadius: 12, fontSize: 14, cursor: 'pointer' }}>გაუქმება</button>
               <button onClick={handleSubmit} disabled={submitting || !objectName.trim() || !vehicle.trim()} style={{
@@ -457,5 +497,6 @@ export default function GatanaPage() {
 }
 
 const qtyBtnSt: React.CSSProperties = { width: 28, height: 28, borderRadius: 8, border: '1px solid #e0e0e0', background: '#f8f8f8', fontSize: 16, cursor: 'pointer', fontWeight: 700 }
+const qtyInpSt: React.CSSProperties = { width: 52, padding: '5px 4px', textAlign: 'center', fontSize: 14, fontWeight: 700, borderRadius: 8, border: '1px solid #e0e0e0', outline: 'none' }
 const lblSt: React.CSSProperties = { display: 'block', fontSize: 12, color: '#888', fontWeight: 600, marginBottom: 6 }
 const inpSt: React.CSSProperties = { width: '100%', padding: '11px 14px', fontSize: 15, borderRadius: 10, border: '1.5px solid #e0e0e0', outline: 'none', marginBottom: 14, boxSizing: 'border-box' }

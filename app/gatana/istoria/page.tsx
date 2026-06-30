@@ -274,7 +274,7 @@ export default function IstoriaPage() {
     const p = new URLSearchParams()
     if (from) p.set('from', from)
     if (to) p.set('to', to)
-    fetch(`/api/dispatch-history?${p}`)
+    fetch(`/api/dispatch-history?${p}`, { cache: 'no-store' })
       .then(r => r.json())
       .then(data => { setDispatches(data); setLoading(false) })
       .catch(() => setLoading(false))
@@ -389,24 +389,24 @@ export default function IstoriaPage() {
           const isTest = !!d.is_test
           const textStyle = isTest ? { textDecoration: 'line-through', opacity: 0.6 } : {}
           return (
-            <div key={d.id} style={{ background: isTest ? '#fafafa' : '#fff', borderRadius: 14, marginBottom: 10, overflow: 'hidden', boxShadow: '0 1px 4px rgba(0,0,0,0.08)', border: isTest ? '1px dashed #ddd' : 'none' }}>
-              <div onClick={() => setExpanded(isOpen ? null : d.id)} style={{ padding: '13px 14px', cursor: 'pointer' }}>
+            <div key={d.id} style={{ background: isTest ? '#fafafa' : '#fff', borderRadius: 16, marginBottom: 10, overflow: 'hidden', boxShadow: isOpen ? '0 8px 24px rgba(16,24,40,0.10)' : '0 1px 2px rgba(16,24,40,0.04), 0 1px 3px rgba(16,24,40,0.06)', border: isTest ? '1px dashed #e0c98a' : isOpen ? '1px solid #d8dce3' : '1px solid #eef0f3', transition: 'box-shadow 0.2s' }}>
+              <div onClick={() => setExpanded(isOpen ? null : d.id)} style={{ padding: '14px 15px', cursor: 'pointer' }}>
                 {isTest && (
-                  <div style={{ fontSize: 11, fontWeight: 700, color: '#f59e0b', background: '#fff8e1', display: 'inline-flex', alignItems: 'center', gap: 4, padding: '2px 8px', borderRadius: 6, marginBottom: 6 }}>
+                  <div style={{ fontSize: 11, fontWeight: 700, color: '#b45309', background: '#fff8e1', display: 'inline-flex', alignItems: 'center', gap: 4, padding: '3px 9px', borderRadius: 7, marginBottom: 8 }}>
                     🧪 სატესტო გატანა
                   </div>
                 )}
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 6 }}>
-                  <div style={{ flex: 1, minWidth: 0, marginRight: 8 }}>
-                    <div style={{ fontSize: 15, fontWeight: 700, color: '#1a1a2e', marginBottom: 2, ...textStyle }}>📍 {d.object_name}</div>
-                    <div style={{ fontSize: 13, color: '#666', ...textStyle }}>🚗 {d.vehicle}</div>
-                    {d.dispatch_note && <div style={{ fontSize: 12, color: '#888', marginTop: 3, fontStyle: 'italic' }}>📝 {d.dispatch_note}</div>}
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 8 }}>
+                  <div style={{ flex: 1, minWidth: 0, marginRight: 10 }}>
+                    <div style={{ fontSize: 15.5, fontWeight: 700, color: '#0f172a', marginBottom: 3, ...textStyle }}>📍 {d.object_name}</div>
+                    <div style={{ fontSize: 13, color: '#64748b', fontWeight: 500, ...textStyle }}>🚗 {d.vehicle}</div>
+                    {d.dispatch_note && <div style={{ fontSize: 12, color: '#94a3b8', marginTop: 4, fontStyle: 'italic' }}>📝 {d.dispatch_note}</div>}
                   </div>
-                  <div style={{ textAlign: 'right', flexShrink: 0 }}>
-                    <div style={{ fontSize: 11, color: '#999' }}>{fmtDate(d.created_at)}</div>
-                    <div style={{ fontSize: 12, fontWeight: 600, marginTop: 2 }}>
-                      <span style={{ color: '#e94560' }}>#{d.id}</span>
-                      <span style={{ color: isTest ? '#aaa' : '#22a06b', marginLeft: 6, ...textStyle }}>{totalQty} ერთ.</span>
+                  <div style={{ textAlign: 'right', flexShrink: 0, display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 5 }}>
+                    <div style={{ fontSize: 11, color: '#94a3b8' }}>{fmtDate(d.created_at)}</div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                      <span style={{ fontSize: 11, fontWeight: 700, color: '#e94560', background: '#fff0f3', padding: '2px 8px', borderRadius: 6 }}>#{d.id}</span>
+                      <span style={{ fontSize: 12, fontWeight: 700, color: isTest ? '#aaa' : '#15803d', background: isTest ? '#f1f1f1' : '#f0fdf4', padding: '2px 9px', borderRadius: 6, ...textStyle }}>{totalQty} ერთ.</span>
                     </div>
                   </div>
                 </div>

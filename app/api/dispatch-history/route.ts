@@ -10,7 +10,9 @@ export async function GET(req: NextRequest) {
     const to = searchParams.get('to') || undefined
     await initDB()
     const history = await getDispatchHistory(from, to)
-    return NextResponse.json(history)
+    return NextResponse.json(history, {
+      headers: { 'Cache-Control': 'no-store, no-cache, must-revalidate' },
+    })
   } catch (e) {
     console.error(e)
     return NextResponse.json([], { status: 500 })

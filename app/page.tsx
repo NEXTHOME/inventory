@@ -16,11 +16,21 @@ type Item = {
   isOld?: boolean
 }
 
-const allData: Record<string, Item[]> = {
-  warehouse: warehouseData as Item[],
-  meoradi: meoradiData as Item[],
-  ziritadi: ziritadiData as Item[],
+type Category = 'warehouse' | 'meoradi' | 'ziritadi'
+type CatItem = Item & { _cat: Category }
+
+const CAT_META: Record<Category, { label: string; badge: string; color: string; bg: string }> = {
+  warehouse: { label: 'საწყობის ნაშთი', badge: '🏭', color: '#38bdf8', bg: 'rgba(56,189,248,0.16)' },
+  meoradi:   { label: 'მეორადი',        badge: '♻️', color: '#4ade80', bg: 'rgba(74,222,128,0.16)' },
+  ziritadi:  { label: 'ძირითადი',       badge: '🔧', color: '#c084fc', bg: 'rgba(192,132,252,0.16)' },
 }
+
+const dataByCat: Record<Category, CatItem[]> = {
+  warehouse: (warehouseData as Item[]).map(i => ({ ...i, _cat: 'warehouse' })),
+  meoradi:   (meoradiData as Item[]).map(i => ({ ...i, _cat: 'meoradi' })),
+  ziritadi:  (ziritadiData as Item[]).map(i => ({ ...i, _cat: 'ziritadi' })),
+}
+const allItems: CatItem[] = [...dataByCat.warehouse, ...dataByCat.meoradi, ...dataByCat.ziritadi]
 
 function fmt(n: number) {
   if (!n) return '—'
@@ -112,13 +122,14 @@ function HistoryBadge({ entries }: { entries: DispatchEntry[] }) {
 }
 
 function ItemCard({
-  item, imageMap, qtyOverrides, onQtyChange, dispatchEntries,
+  item, imageMap, qtyOverrides, onQtyChange, dispatchEntries, catMeta,
 }: {
   item: Item
   imageMap: Record<string, string>
   qtyOverrides: Record<string, number>
   onQtyChange: (code: string, newQty: number) => void
   dispatchEntries: DispatchEntry[]
+  catMeta?: { label: string; badge: string; color: string; bg: string }
 }) {
   const [expanded, setExpanded] = useState(false)
   const [imgUrl, setImgUrl] = useState<string | null>(null)
@@ -188,7 +199,7 @@ function ItemCard({
 
   const handleCopyCode = (e: React.MouseEvent) => {
     e.stopPropagation()
-    const last = getLastPart(item.code)
+    const last = getLastPart(item.code).slice(-5)
     const finish = () => { setCopied(true); setTimeout(() => setCopied(false), 1500) }
     if (navigator.clipboard?.writeText) {
       navigator.clipboard.writeText(last).then(finish).catch(() => fallbackCopy(last, finish))
@@ -202,61 +213,81 @@ function ItemCard({
   const hasLowStock = currentQty !== null && currentQty <= 3 && currentQty > 0
   const isZero = currentQty === 0
 
+  const qtyColor = isZero ? '#fb7185' : hasLowStock ? '#fbbf24' : '#34d399'
+  const qtyBg = isZero ? 'rgba(251,113,133,0.16)' : hasLowStock ? 'rgba(251,191,36,0.16)' : 'rgba(52,211,153,0.16)'
+
   return (
     <div style={{
-      background: item.isOld ? '#fffbe6' : '#fff',
-      borderRadius: 14, marginBottom: 10, overflow: 'hidden',
+      background: item.isOld
+        ? 'linear-gradient(160deg, #2a2616 0%, #20212e 60%)'
+        : 'linear-gradient(160deg, #24263a 0%, #1c1d2b 100%)',
+      borderRadius: 16, marginBottom: 10, overflow: 'hidden',
+      borderLeft: `4px solid ${qtyColor}`,
+      borderTop: expanded ? '1px solid rgba(233,69,96,0.6)' : '1px solid rgba(255,255,255,0.06)',
+      borderRight: expanded ? '1px solid rgba(233,69,96,0.6)' : '1px solid rgba(255,255,255,0.06)',
+      borderBottom: expanded ? '1px solid rgba(233,69,96,0.6)' : '1px solid rgba(255,255,255,0.06)',
       boxShadow: expanded
-        ? '0 0 0 2px #e94560, 0 4px 16px rgba(0,0,0,0.12)'
-        : item.isOld ? '0 1px 4px rgba(180,140,0,0.18)' : '0 1px 4px rgba(0,0,0,0.08)',
+        ? '0 10px 30px rgba(0,0,0,0.4)'
+        : '0 1px 2px rgba(0,0,0,0.2), 0 2px 8px rgba(0,0,0,0.15)',
+      transition: 'box-shadow 0.2s, border-color 0.2s',
     }}>
-      <div onClick={() => setExpanded(p => !p)} style={{ padding: '12px 14px', cursor: 'pointer' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
+      <div onClick={() => setExpanded(p => !p)} style={{ padding: '13px 15px', cursor: 'pointer' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8, gap: 8 }}>
           <span
             onClick={handleCopyCode}
             title="კოპირება"
             style={{
-              fontSize: 11, fontWeight: 600, color: copied ? '#22a06b' : '#e94560',
-              background: copied ? '#e6f9f0' : '#fff0f3',
-              padding: '2px 8px', borderRadius: 6, cursor: 'copy',
-              transition: 'all 0.2s',
+              fontSize: 11.5, fontWeight: 700, letterSpacing: '0.03em',
+              color: copied ? '#34d399' : '#fda4af',
+              background: copied ? 'rgba(52,211,153,0.16)' : 'rgba(233,69,96,0.18)',
+              padding: '3px 10px', borderRadius: 7, cursor: 'copy',
+              transition: 'all 0.2s', flexShrink: 0,
             }}
           >
             {copied ? '✓ დაკოპირდა' : getLastPart(item.code)}
           </span>
           <div style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
+            {catMeta && (
+              <span style={{ fontSize: 11, fontWeight: 700, color: catMeta.color, background: catMeta.bg, padding: '3px 10px', borderRadius: 7, whiteSpace: 'nowrap' }}>
+                {catMeta.badge} {catMeta.label}
+              </span>
+            )}
             {dispatchEntries.length > 0 && (
               <HistoryBadge entries={dispatchEntries} />
             )}
-            <span style={{ fontSize: 11, color: '#666', background: '#f0f0f0', padding: '2px 8px', borderRadius: 6 }}>
+            <span style={{ fontSize: 11, fontWeight: 600, color: '#cbd5e1', background: 'rgba(255,255,255,0.08)', padding: '3px 10px', borderRadius: 7 }}>
               {item.unit || '—'}
             </span>
           </div>
         </div>
         <div style={{
-          fontSize: 14, fontWeight: 500, color: '#111', lineHeight: 1.4,
+          fontSize: 14.5, fontWeight: 600, color: '#f1f5f9', lineHeight: 1.4,
           display: '-webkit-box', WebkitLineClamp: expanded ? undefined : 2,
           WebkitBoxOrient: 'vertical', overflow: expanded ? 'visible' : 'hidden',
         }}>
           {item.name}
         </div>
-        <div style={{ display: 'flex', gap: 14, marginTop: 8, flexWrap: 'wrap', alignItems: 'center' }}>
-          <Stat label="სრული ფასი" value={`${fmt(item.totalPrice)} ₾`} accent />
-          <Stat label="ერთ. ფასი" value={`${fmt(item.unitPrice)} ₾`} />
-          <div>
-            <div style={{ fontSize: 10, color: '#999', marginBottom: 1 }}>რაოდენობა</div>
-            <div style={{
-              fontSize: 14, fontWeight: 700,
-              color: isZero ? '#e94560' : hasLowStock ? '#d97706' : '#333',
-            }}>
+        <div style={{ display: 'flex', gap: 12, marginTop: 12, alignItems: 'center', justifyContent: 'space-between' }}>
+          <div style={{ display: 'flex', gap: 18, flexWrap: 'wrap', alignItems: 'center', background: 'rgba(255,255,255,0.05)', borderRadius: 12, padding: '8px 14px' }}>
+            <Stat label="სრული ფასი" value={`${fmt(item.totalPrice)} ₾`} accent />
+            <Stat label="ერთ. ფასი" value={`${fmt(item.unitPrice)} ₾`} />
+          </div>
+          <div style={{
+            display: 'flex', flexDirection: 'column', alignItems: 'center',
+            background: qtyBg, borderRadius: 12, padding: '6px 14px', minWidth: 64, flexShrink: 0,
+          }}>
+            <span style={{ fontSize: 18, fontWeight: 800, color: qtyColor, lineHeight: 1.1 }}>
               {currentQty !== undefined ? String(currentQty) : '—'}
-            </div>
+            </span>
+            <span style={{ fontSize: 9.5, fontWeight: 600, color: qtyColor, opacity: 0.85, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+              {isZero ? 'არ არის' : hasLowStock ? 'მცირე' : 'მარაგი'}
+            </span>
           </div>
         </div>
       </div>
 
       {expanded && (
-        <div style={{ borderTop: '1px solid #f0f0f0', padding: '12px 14px' }}>
+        <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', background: '#fbfbfd', padding: '12px 14px' }}>
 
           {/* Dispatch row */}
           <div onClick={e => e.stopPropagation()} style={{
@@ -348,8 +379,8 @@ function SmallBtn({ onClick, children }: { onClick: (e: React.MouseEvent) => voi
 function Stat({ label, value, accent }: { label: string; value: string; accent?: boolean }) {
   return (
     <div>
-      <div style={{ fontSize: 10, color: '#999', marginBottom: 1 }}>{label}</div>
-      <div style={{ fontSize: 14, fontWeight: 600, color: accent ? '#1a1a2e' : '#333' }}>{value}</div>
+      <div style={{ fontSize: 10, color: '#94a3b8', marginBottom: 2 }}>{label}</div>
+      <div style={{ fontSize: 14, fontWeight: 700, color: accent ? '#ffffff' : '#cbd5e1' }}>{value}</div>
     </div>
   )
 }
@@ -447,7 +478,7 @@ function GlobalSearch({ onClose, onSelect }: {
 const PAGE_SIZES = [10, 20, 100, 300]
 
 export default function Home() {
-  const [category, setCategory] = useState<'warehouse' | 'meoradi' | 'ziritadi'>('warehouse')
+  const [category, setCategory] = useState<Category | 'all'>('warehouse')
   const [query, setQuery] = useState('')
   const [filter, setFilter] = useState<'all' | 'code' | 'name'>('all')
   const [imageMap, setImageMap] = useState<Record<string, string>>({})
@@ -457,7 +488,8 @@ export default function Home() {
   const [dispatchSummary, setDispatchSummary] = useState<Record<string, {id:number;object_name:string;vehicle:string;created_at:string;quantity:number;unit:string}[]>>({})
   const [showGlobalSearch, setShowGlobalSearch] = useState(false)
 
-  const items = allData[category]
+  const items: CatItem[] = category === 'all' ? allItems : dataByCat[category]
+  const showCatBadge = category === 'all'
 
   useEffect(() => {
     fetch('/imageMap.json').then(r => r.json()).then(setImageMap).catch(() => {})
@@ -531,6 +563,12 @@ export default function Home() {
             }}>
               🔍
             </button>
+            <Link href="/waybill" style={{
+              textDecoration: 'none', background: 'rgba(255,255,255,0.15)', color: '#fff',
+              padding: '6px 12px', borderRadius: 10, fontSize: 13, fontWeight: 600,
+            }}>
+              📋 ზედნ.
+            </Link>
             <Link href="/profile" style={{
               textDecoration: 'none', background: 'rgba(255,255,255,0.15)', color: '#fff',
               padding: '6px 12px', borderRadius: 10, fontSize: 13, fontWeight: 600,
@@ -543,12 +581,13 @@ export default function Home() {
         {/* Category switcher */}
         <div style={{ display: 'flex', gap: 6, marginBottom: 10 }}>
           {([
+            { v: 'all', label: '🔎 ყველა' },
             { v: 'warehouse', label: '🏭 მასალა' },
             { v: 'meoradi', label: '♻️ მეორადი' },
             { v: 'ziritadi', label: '🔧 ძირითადი' },
           ] as const).map(c => (
             <button key={c.v} onClick={() => { setCategory(c.v); setQuery('') }} style={{
-              flex: 1, padding: '8px 0', fontSize: 12, borderRadius: 10, border: 'none',
+              flex: 1, padding: '8px 0', fontSize: 11.5, borderRadius: 10, border: 'none',
               cursor: 'pointer', fontWeight: category === c.v ? 700 : 400,
               background: category === c.v ? '#fff' : 'rgba(255,255,255,0.15)',
               color: category === c.v ? '#1a1a2e' : '#fff',
@@ -610,12 +649,13 @@ export default function Home() {
 
         {visible.map(item => (
           <ItemCard
-            key={item.code}
+            key={`${item._cat}:${item.code}`}
             item={item}
             imageMap={imageMap}
             qtyOverrides={qtyOverrides}
             onQtyChange={handleQtyChange}
             dispatchEntries={dispatchSummary[item.code] || []}
+            catMeta={showCatBadge ? CAT_META[item._cat] : undefined}
           />
         ))}
 
