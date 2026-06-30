@@ -29,13 +29,23 @@ type DispatchEntry = {
   unit: string
 }
 
-const allData: Record<Category, Item[]> = {
-  warehouse: warehouseData as Item[],
-  meoradi: meoradiData as Item[],
-  ziritadi: ziritadiData as Item[],
+type CatItem = Item & { _cat: Category }
+
+const dataByCat: Record<Category, CatItem[]> = {
+  warehouse: (warehouseData as Item[]).map(i => ({ ...i, _cat: 'warehouse' })),
+  meoradi:   (meoradiData as Item[]).map(i => ({ ...i, _cat: 'meoradi' })),
+  ziritadi:  (ziritadiData as Item[]).map(i => ({ ...i, _cat: 'ziritadi' })),
+}
+const allItemsCombined: CatItem[] = [...dataByCat.warehouse, ...dataByCat.meoradi, ...dataByCat.ziritadi]
+
+const CAT_META: Record<Category, { label: string; badge: string; color: string; bg: string }> = {
+  warehouse: { label: 'საწყობი',  badge: '🏭', color: '#0284c7', bg: '#e0f2fe' },
+  meoradi:   { label: 'მეორადი',  badge: '♻️', color: '#16a34a', bg: '#dcfce7' },
+  ziritadi:  { label: 'ძირითადი', badge: '🔧', color: '#9333ea', bg: '#f3e8ff' },
 }
 
-const CATS: { v: Category; label: string }[] = [
+const CATS: { v: Category | 'all'; label: string }[] = [
+  { v: 'all', label: '🔎 ყველა' },
   { v: 'warehouse', label: '🏭 მასალა' },
   { v: 'meoradi', label: '♻️ მეორადი' },
   { v: 'ziritadi', label: '🔧 ძირითადი' },
@@ -116,7 +126,7 @@ function DispatchBadge({ entries }: { entries: DispatchEntry[] }) {
 
 // ─── Main Page ────────────────────────────────────────────────────────────────
 export default function GatanaPage() {
-  const [category, setCategory] = useState<Category>('warehouse')
+  const [category, setCategory] = useState<Category | 'all'>('warehouse')
   const [query, setQuery] = useState('')
   const [qtyOverrides, setQtyOverrides] = useState<Record<string, number>>({})
   const [dispatchSummary, setDispatchSummary] = useState<Record<string, DispatchEntry[]>>({})
@@ -139,7 +149,8 @@ export default function GatanaPage() {
     fetch('/api/dispatch-summary', { cache: 'no-store' }).then(r => r.json()).then(setDispatchSummary).catch(() => {})
   }, [])
 
-  const items = allData[category]
+  const items: CatItem[] = category === 'all' ? allItemsCombined : dataByCat[category]
+  const showCatBadge = category === 'all'
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
@@ -155,11 +166,12 @@ export default function GatanaPage() {
   const currentQty = (item: Item) =>
     item.code in qtyOverrides ? qtyOverrides[item.code] : item.quantity
 
-  const addToCart = (item: Item) => {
+  const addToCart = (item: CatItem) => {
+    const cat = item._cat
     setCart(prev => {
       const exists = prev.find(c => c.code === item.code)
       if (exists) return prev.map(c => c.code === item.code ? { ...c, dispatchQty: c.dispatchQty + 1 } : c)
-      return [...prev, { ...item, category, dispatchQty: 1, note: '' }]
+      return [...prev, { ...item, category: cat, dispatchQty: 1, note: '' }]
     })
   }
 
@@ -283,7 +295,7 @@ export default function GatanaPage() {
         <div style={{ display: 'flex', gap: 6, marginBottom: 10 }}>
           {CATS.map(c => (
             <button key={c.v} onClick={() => { setCategory(c.v); setQuery('') }} style={{
-              flex: 1, padding: '7px 0', fontSize: 12, borderRadius: 10, border: 'none', cursor: 'pointer',
+              flex: 1, padding: '7px 0', fontSize: 11, borderRadius: 10, border: 'none', cursor: 'pointer',
               fontWeight: category === c.v ? 700 : 400,
               background: category === c.v ? '#fff' : 'rgba(255,255,255,0.15)',
               color: category === c.v ? '#1a1a2e' : '#fff',
@@ -324,7 +336,7 @@ export default function GatanaPage() {
           const isEditingNote = editingNoteCode === item.code
           const dispatched = dispatchSummary[item.code] || []
           return (
-            <div key={item.code} style={{ background: '#fff', borderRadius: 14, marginBottom: 8, border: inCart ? '1px solid #1a1a2e' : '1px solid #eef0f3', boxShadow: inCart ? '0 4px 16px rgba(26,26,46,0.12)' : '0 1px 2px rgba(16,24,40,0.05)', opacity: qty === 0 ? 0.55 : 1, overflow: 'hidden', transition: 'box-shadow 0.2s, border-color 0.2s' }}>
+            <div key={`${item._cat}:${item.code}`} style={{ background: '#fff', borderRadius: 14, marginBottom: 8, border: inCart ? '1px solid #1a1a2e' : '1px solid #eef0f3', boxShadow: inCart ? '0 4px 16px rgba(26,26,46,0.12)' : '0 1px 2px rgba(16,24,40,0.05)', opacity: qty === 0 ? 0.55 : 1, overflow: 'hidden', transition: 'box-shadow 0.2s, border-color 0.2s' }}>
               <div style={{ padding: '12px 14px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 10 }}>
                 <div style={{ flex: 1, minWidth: 0 }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 6, flexWrap: 'wrap', marginBottom: 5 }}>
@@ -334,6 +346,11 @@ export default function GatanaPage() {
                     <span style={{ fontSize: 11, fontWeight: 700, color: qty === 0 ? '#e11d48' : qty <= 3 ? '#d97706' : '#16a34a', background: qty === 0 ? '#fff1f2' : qty <= 3 ? '#fff7ed' : '#f0fdf4', padding: '2px 8px', borderRadius: 6 }}>
                       {qty} {item.unit || ''}
                     </span>
+                    {showCatBadge && (
+                      <span style={{ fontSize: 11, fontWeight: 700, color: CAT_META[item._cat].color, background: CAT_META[item._cat].bg, padding: '2px 8px', borderRadius: 6 }}>
+                        {CAT_META[item._cat].badge} {CAT_META[item._cat].label}
+                      </span>
+                    )}
                     <DispatchBadge entries={dispatched} />
                   </div>
                   <div style={{ fontSize: 13.5, fontWeight: 600, color: '#0f172a', lineHeight: 1.35, overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>
