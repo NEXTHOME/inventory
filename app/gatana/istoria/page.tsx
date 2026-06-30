@@ -83,6 +83,8 @@ function EditDrawer({ dispatch, onSave, onClose }: {
   const [saving, setSaving] = useState(false)
   const [itemSearch, setItemSearch] = useState('')
   const [replacingIdx, setReplacingIdx] = useState<number | null>(null)
+  const [adding, setAdding] = useState(false)
+  const [addSearch, setAddSearch] = useState('')
   const photoRef = useRef<HTMLInputElement>(null)
 
   const searchResults = useMemo(() => {
@@ -92,6 +94,20 @@ function EditDrawer({ dispatch, onSave, onClose }: {
       i.code.toLowerCase().includes(q) || i.name.toLowerCase().includes(q)
     ).slice(0, 15)
   }, [itemSearch])
+
+  const addResults = useMemo(() => {
+    if (!addSearch.trim()) return []
+    const q = addSearch.toLowerCase()
+    return allItemsFlat.filter(i =>
+      i.code.toLowerCase().includes(q) || i.name.toLowerCase().includes(q)
+    ).slice(0, 15)
+  }, [addSearch])
+
+  const addItem = (raw: RawItem & { _cat: string }) => {
+    setItems(prev => [...prev, { item_code: raw.code, item_name: raw.name, quantity: 1, unit: raw.unit, category: raw._cat, note: '' }])
+    setAdding(false)
+    setAddSearch('')
+  }
 
   const updateItem = (idx: number, patch: Partial<DispatchItem>) =>
     setItems(prev => prev.map((it, i) => i === idx ? { ...it, ...patch } : it))
@@ -238,6 +254,34 @@ function EditDrawer({ dispatch, onSave, onClose }: {
             )}
           </div>
         ))}
+
+        {/* Add new material */}
+        {adding ? (
+          <div style={{ background: '#f0f4ff', borderRadius: 10, padding: '10px 12px', marginBottom: 8, border: '1.5px solid #c7d2fe' }}>
+            <input autoFocus value={addSearch} onChange={e => setAddSearch(e.target.value)}
+              placeholder="ახალი მასალის ძებნა (კოდი ან დასახელება)..."
+              style={{ width: '100%', padding: '9px 12px', borderRadius: 8, border: '1.5px solid #4f46e5', outline: 'none', fontSize: 13, marginBottom: 6 }} />
+            {addResults.map(r => (
+              <div key={r.code} onClick={() => addItem(r as RawItem & { _cat: string })}
+                style={{ padding: '8px 10px', borderRadius: 8, cursor: 'pointer', fontSize: 13, background: '#fff', marginBottom: 4, border: '1px solid #eee' }}>
+                <span style={{ color: '#e94560', fontWeight: 600, marginRight: 6 }}>{getLastPart(r.code)}</span>
+                {r.name}
+              </div>
+            ))}
+            {addSearch.trim() && addResults.length === 0 && (
+              <div style={{ fontSize: 12, color: '#888', padding: '4px 2px' }}>ვერ მოიძებნა</div>
+            )}
+            <button onClick={() => { setAdding(false); setAddSearch('') }}
+              style={{ marginTop: 4, background: '#f0f0f0', border: 'none', borderRadius: 8, padding: '6px 12px', fontSize: 12, cursor: 'pointer' }}>
+              გაუქმება
+            </button>
+          </div>
+        ) : (
+          <button onClick={() => setAdding(true)}
+            style={{ width: '100%', padding: '11px', marginBottom: 8, background: '#eef2ff', border: '1.5px dashed #a5b4fc', borderRadius: 10, fontSize: 13, fontWeight: 600, color: '#4f46e5', cursor: 'pointer' }}>
+            + მასალის დამატება
+          </button>
+        )}
 
         <div style={{ display: 'flex', gap: 10, marginTop: 16 }}>
           <button onClick={onClose} style={{ flex: 1, padding: '13px', background: '#f0f0f0', color: '#333', border: 'none', borderRadius: 12, fontSize: 14, cursor: 'pointer' }}>გაუქმება</button>
